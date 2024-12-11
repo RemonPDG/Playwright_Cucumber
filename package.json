@@ -1,0 +1,26 @@
+{
+  "name": "playwright-cucumber",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:cucumber": "cucumber-js --require ./steps/ --format json:cucumber-report.json",
+    "report": "node generate-report.js",
+    "test-and-report": "npm run test:cucumber && npm run report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@playwright/test": "^1.49.0",
+    "chai": "^5.1.2",
+    "playwright": "^1.49.0",
+    "puppeteer": "^23.10.1",
+    "puppeteer-video-recorder": "^1.0.5"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.1.0",
+    "cucumber-html-reporter": "^6.0.0",
+    "xlsx": "^0.18.5"
+  }
+}

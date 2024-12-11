@@ -1,0 +1,128 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "menambah-master-tag;menambahkan-tag-baru-di-master-tag",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Menambahkan Tag Baru di Master Tag",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "Login berhasil",
+            "match": {
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.steps.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7612645600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Pergi ke Master",
+            "match": {
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.steps.js:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 131472400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Pergi ke Core",
+            "match": {
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.steps.js:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64073899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Pergi ke Tag",
+            "match": {
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.steps.js:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84976799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "Saya melihat tampilan list tag",
+            "match": {
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.steps.js:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 358900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Klik Create New",
+            "match": {
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.steps.js:80"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11965045200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Isi datanya",
+            "match": {
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.steps.js:88"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15127759000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Klik Save, dan hasil berhasil",
+            "match": {
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.steps.js:103"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 357669900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "menambah-master-tag",
+    "line": 7,
+    "keyword": "Feature",
+    "name": "Menambah Master Tag",
+    "tags": [],
+    "uri": "features\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.feature"
+  }
+]
