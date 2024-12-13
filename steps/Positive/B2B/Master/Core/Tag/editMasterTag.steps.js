@@ -33,7 +33,7 @@ const { data1, lastdata } = readExcelFile(excelFilePath);
 // console.log('Data dari Sheet 2:', lastdata);
 
 // Fungsi login
-Given('Login ke B2B berhasil',{ timeout: 1555000 }, async function () {
+Given('Login B2B berhasil',{ timeout: 1555000 }, async function () {
   browser = await chromium.launch({ headless: false });
   const context = await browser.newContext();
   page = await context.newPage();
@@ -50,25 +50,25 @@ Given('Login ke B2B berhasil',{ timeout: 1555000 }, async function () {
 });
 
 // Navigasi ke Master > Core > Tag
-Given('menu Master', async function () {
+Given('Master', async function () {
   await page.getByLabel('Toggle Master').click();
 });
 
-Given('menu Core', async function () {
+Given('Core', async function () {
   await page.getByLabel('Toggle Core').click();
 });
 
-Given('menu Tag',{ timeout: 1555000 }, async function () {
+Given('Tag',{ timeout: 1555000 }, async function () {
   await page.getByLabel('Toggle Tag').click();
   await page.waitForSelector('.loading-indicator', { state: 'hidden' });
 });
 
 // Memastikan tampilan list tag
-When('Saya lihat tampilan semua list Tag', async function () {
+When('Saya melihat tampilan semua list Tag', async function () {
   // await page.getByRole('button', { name: 'Create New' }).waitForSelector(selector, { state: 'visible', timeout: 5000 });
 });
 
-When('Cari data yang diinput sebelumnya',{ timeout: 1555000 }, async function () {
+When('Cari data yang diinput sebelumnya di excel',{ timeout: 1555000 }, async function () {
   await page.getByPlaceholder('Search Data').click();
   await page.getByPlaceholder('Search Data').fill(lastdata.toString());
   await page.getByPlaceholder('Search Data').press('Enter');
@@ -76,32 +76,43 @@ When('Cari data yang diinput sebelumnya',{ timeout: 1555000 }, async function ()
 });
 
 // Klik tombol Create New
-When('Klik data tersebut',{ timeout: 1555000 }, async function () {
+When('Klik datanya',{ timeout: 1555000 }, async function () {
   await page.getByRole('cell', { name: lastdata.toString() }).click();
   //   await page.waitForSelector('.loading-indicator', { state: 'hidden' });
 });
 
-When('Klik Hapus',{ timeout: 1555000 }, async function () {
-  await page.getByRole('button', { name: 'Delete' }).click();
+When('Klik Edit',{ timeout: 1555000 }, async function () {
+  await page.getByRole('button', { name: 'Edit', exact: true }).click();
   await page.waitForSelector('.loading-indicator', { state: 'hidden' });
 });
 
 // Isi data tag baru
-When('Isi Alasannya',{ timeout: 1555000 }, async function () {
-  await page.getByLabel('Hapus Reason').click();
-  await page.getByLabel('Hapus Reason').fill('test maskos');
+When('Isi Data yang mau dirubah',{ timeout: 1555000 }, async function () {
+  await page.locator('div:nth-child(2) > div > .col-lg-9 > .form-control').first().fill('#ffffff');
+  await page.locator('textarea').click();
+  await page.locator('textarea').fill('ZZZZZZZZZZZZZ.');
   
 });
 
 // Klik Save dan verifikasi hasil
-Then('Klik Hapus, dan hasil berhasil di hapus',{ timeout: 1555000 }, async function () {
-  await page.getByRole('button', { name: 'OK' }).click();
+Then('Klik Save, dan hasil berhasil di edit',{ timeout: 1555000 }, async function () {
+  await page.getByRole('button', { name: 'Save' }).click();
   await page.waitForSelector('.loading-indicator', { state: 'hidden' });
+
+  // await page.locator('div').filter({ hasText: /^Tag Color$/ }).getByRole('textbox').click({
+  //   button: 'right'
+  // });
+  // await page.locator('textarea').click({
+  //   button: 'right'
+  // });
+  // await page.locator('div').filter({ hasText: /^Tag Name$/ }).getByRole('textbox').click({
+  //   button: 'right'
+  // });
 
   await page.locator('div').filter({ hasText: new RegExp(`^${lastdata}$`, 'i') });
   // await page.locator('div').filter({ hasText: /^Tag Name$/ }).getByRole('textbox').click({
   //   button: 'right'
   // });
   // await page.locator(`text=/.*${randomString}.*/i`).waitFor();
-  // await browser.close();
+  await browser.close();
 });

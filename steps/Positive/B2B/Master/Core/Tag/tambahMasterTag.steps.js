@@ -3,6 +3,7 @@ const { Given, When, Then} = require('@cucumber/cucumber');
 const { chromium } = require('playwright');
 const XLSX = require('xlsx');
 const path = require('path'); // Tambahkan ini di awal file
+const fs = require('fs');
 
 function readExcelFile(filePath) {
   const workbook = XLSX.readFile(filePath);
@@ -37,8 +38,35 @@ function generateRandomString(length) {
 }
 
 const randomString = generateRandomString(10); // Panjang 10 karakter
-const uppercaseInput = randomString.toUpperCase();
+// const uppercaseInput = randomString.toUpperCase();
 // console.log(randomString);
+
+
+// Fungsi untuk menulis data ke file Excel
+function writeDataToExcel(filePath, sheetName, data) {
+    let workbook;
+
+    // Cek apakah file sudah ada
+    if (fs.existsSync(filePath)) {
+        workbook = XLSX.readFile(filePath); // Buka workbook yang sudah ada
+    } else {
+        workbook = XLSX.utils.book_new(); // Buat workbook baru
+    }
+
+    // Tambahkan data ke sheet yang ada atau buat sheet baru
+    const worksheet = workbook.Sheets[sheetName] || XLSX.utils.aoa_to_sheet([]);
+    const existingData = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+
+    // Tambahkan data baru ke worksheet
+    existingData.push(data);
+
+    // Perbarui worksheet
+    const newWorksheet = XLSX.utils.aoa_to_sheet(existingData);
+    workbook.Sheets[sheetName] = newWorksheet;
+
+    // Simpan workbook ke file
+    XLSX.writeFile(workbook, filePath);
+}
 
 // Fungsi login
 Given('Login berhasil',{ timeout: 1555000 }, async function () {
@@ -96,6 +124,16 @@ When('Isi datanya',{ timeout: 1555000 }, async function () {
   await page.locator('div:nth-child(2) > div > .col-lg-9 > .form-control').first().fill(data2[1][1]);
   await page.locator('textarea').click();
   await page.locator('textarea').fill(data2[1][2]);
+
+  const excelFilePath = path.resolve(__dirname, '../../../../../../Excel/B2B.xlsx');
+  const filePath = excelFilePath; // Lokasi file Excel Anda
+  const sheetName = "TagSave";     // Nama sheet di file Excel
+
+  writeDataToExcel(filePath, sheetName, [randomString]);
+
+  console.log(`Email '${randomString}' berhasil disimpan ke ${filePath} di sheet '${sheetName}'`);
+
+  
 });
 console.log(randomString);
 

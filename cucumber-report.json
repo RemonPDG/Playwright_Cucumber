@@ -4,113 +4,139 @@
     "elements": [
       {
         "description": "",
-        "id": "menambah-master-tag;menambahkan-tag-baru-di-master-tag",
+        "id": "mengedit-master-tag;menghapus-tag-di-master-tag",
         "keyword": "Scenario",
         "line": 9,
-        "name": "Menambahkan Tag Baru di Master Tag",
+        "name": "Menghapus Tag di Master Tag",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 10,
-            "name": "Login berhasil",
+            "name": "Login ke B2B berhasil",
             "match": {
-              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.steps.js:44"
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\hapusMasterTag.steps.js:36"
             },
             "result": {
               "status": "passed",
-              "duration": 7612645600
+              "duration": 5827240300
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 11,
-            "name": "Pergi ke Master",
+            "name": "menu Master",
             "match": {
-              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.steps.js:61"
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\hapusMasterTag.steps.js:53"
             },
             "result": {
               "status": "passed",
-              "duration": 131472400
+              "duration": 101194599
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 12,
-            "name": "Pergi ke Core",
+            "name": "menu Core",
             "match": {
-              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.steps.js:65"
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\hapusMasterTag.steps.js:57"
             },
             "result": {
               "status": "passed",
-              "duration": 64073899
+              "duration": 56766300
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 13,
-            "name": "Pergi ke Tag",
+            "name": "menu Tag",
             "match": {
-              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.steps.js:69"
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\hapusMasterTag.steps.js:61"
             },
             "result": {
               "status": "passed",
-              "duration": 84976799
+              "duration": 121285699
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 14,
-            "name": "Saya melihat tampilan list tag",
+            "name": "Saya lihat tampilan semua list Tag",
             "match": {
-              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.steps.js:75"
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\hapusMasterTag.steps.js:67"
             },
             "result": {
               "status": "passed",
-              "duration": 358900
+              "duration": 170500
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 15,
-            "name": "Klik Create New",
+            "name": "Cari data yang diinput sebelumnya",
             "match": {
-              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.steps.js:80"
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\hapusMasterTag.steps.js:71"
             },
             "result": {
               "status": "passed",
-              "duration": 11965045200
+              "duration": 11668648699
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 16,
-            "name": "Isi datanya",
+            "name": "Klik data tersebut",
             "match": {
-              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.steps.js:88"
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\hapusMasterTag.steps.js:79"
             },
             "result": {
               "status": "passed",
-              "duration": 15127759000
+              "duration": 1027344900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "Klik Hapus",
+            "match": {
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\hapusMasterTag.steps.js:84"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7683624400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "Isi Alasannya",
+            "match": {
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\hapusMasterTag.steps.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 185627000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 17,
-            "name": "Klik Save, dan hasil berhasil",
+            "line": 19,
+            "name": "Klik Hapus, dan hasil berhasil di hapus",
             "match": {
-              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.steps.js:103"
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\hapusMasterTag.steps.js:97"
             },
             "result": {
               "status": "passed",
-              "duration": 357669900
+              "duration": 417065800
             }
           }
         ],
@@ -118,11 +144,11 @@
         "type": "scenario"
       }
     ],
-    "id": "menambah-master-tag",
+    "id": "mengedit-master-tag",
     "line": 7,
     "keyword": "Feature",
-    "name": "Menambah Master Tag",
+    "name": "Mengedit Master Tag",
     "tags": [],
-    "uri": "features\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.feature"
+    "uri": "features\\Positive\\B2B\\Master\\Core\\Tag\\hapusMasterTag.feature"
   }
 ]
