@@ -95,10 +95,11 @@ When('Isi Alasannya',{ timeout: 1555000 }, async function () {
 
 // Klik Save dan verifikasi hasil
 Then('Klik Hapus, dan hasil berhasil di hapus',{ timeout: 1555000 }, async function () {
+  page.setDefaultTimeout(1555000);
   await page.getByRole('button', { name: 'OK' }).click();
   await page.waitForSelector('.loading-indicator', { state: 'hidden' });
-
   await page.locator('div').filter({ hasText: new RegExp(`^${lastdata}$`, 'i') });
+  
   // await page.locator('div').filter({ hasText: /^Tag Name$/ }).getByRole('textbox').click({
   //   button: 'right'
   // });

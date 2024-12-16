@@ -3,8 +3,8 @@
 #   Scenario: Login ke B2B dan tambah Master > Core > Tag
 #     Given Saya login ke B2B dan ke Menu Master > Core > Tag
 #     Then Saat save master tag harus berhasil
-
-Feature: Mengedit Master Tag
+@urutan3
+Feature: Menghapus Master Tag
 
   Scenario: Menghapus Tag di Master Tag
     Given Login ke B2B berhasil

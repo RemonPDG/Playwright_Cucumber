@@ -90,12 +90,13 @@ When('Klik Edit',{ timeout: 1555000 }, async function () {
 When('Isi Data yang mau dirubah',{ timeout: 1555000 }, async function () {
   await page.locator('div:nth-child(2) > div > .col-lg-9 > .form-control').first().fill('#ffffff');
   await page.locator('textarea').click();
-  await page.locator('textarea').fill('ZZZZZZZZZZZZZ.');
+  await page.locator('textarea').fill('Test lagi maskos.');
   
 });
 
 // Klik Save dan verifikasi hasil
 Then('Klik Save, dan hasil berhasil di edit',{ timeout: 1555000 }, async function () {
+  page.setDefaultTimeout(1555000);
   await page.getByRole('button', { name: 'Save' }).click();
   await page.waitForSelector('.loading-indicator', { state: 'hidden' });
 

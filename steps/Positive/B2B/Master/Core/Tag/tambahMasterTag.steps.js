@@ -1,9 +1,34 @@
 const { Given, When, Then} = require('@cucumber/cucumber');
 // const { expect } = require('@playwright/test');
-const { chromium } = require('playwright');
+const { chromium, firefox } = require('playwright');
 const XLSX = require('xlsx');
 const path = require('path'); // Tambahkan ini di awal file
 const fs = require('fs');
+const { setWorldConstructor } = require('@cucumber/cucumber');
+
+// class CustomWorld {
+//   constructor({ parameters }) {
+//     this.browser = null;
+//     this.firefoxPath = parameters.firefoxExecutablePath; // Ambil path dari konfigurasi
+//   }
+
+//   async launchBrowser() {
+//     this.browser = await firefox.launch({
+//       headless: false,
+//       executablePath: this.firefoxPath,
+//     });
+//     this.context = await this.browser.newContext();
+//     this.page = await this.context.newPage();
+//   }
+
+//   async closeBrowser() {
+//     if (this.browser) {
+//       await this.browser.close();
+//     }
+//   }
+// }
+
+// setWorldConstructor(CustomWorld);
 
 function readExcelFile(filePath) {
   const workbook = XLSX.readFile(filePath);
@@ -70,8 +95,22 @@ function writeDataToExcel(filePath, sheetName, data) {
 
 // Fungsi login
 Given('Login berhasil',{ timeout: 1555000 }, async function () {
-  browser = await chromium.launch({ headless: false });
-  const context = await browser.newContext();
+  browser = await firefox.launch({ 
+    headless: false,
+    // executablePath: 'C:\\Program Files\\Firefox Nightly\\firefox.exe',
+    // executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+    // executablePath: path.resolve(__dirname, '../../../../../../Mozilla_Firefox/firefox.exe'),
+    // args: ['--no-sandbox', '--disable-setuid-sandbox'], // Argumen tambahan
+    // dumpio: true // Log semua proses ke terminal
+    // executablePath: 'C:/Program Files/Mozilla Firefox/firefox.exe'
+  }); // browser firefox versi 127.0
+
+
+  
+  console.log(`Firefox Version: ${browser.version()}`);
+  const context = await browser.newContext({
+    // userDataDir: 'C:\\path\\to\\your\\custom\\profile',
+  });
   page = await context.newPage();
   await page.goto('https://ui-qc-b2b.bhakti.co.id/auth/login/phoenix');
   await page.locator('input[name="email"]').click();
@@ -131,7 +170,7 @@ When('Isi datanya',{ timeout: 1555000 }, async function () {
 
   writeDataToExcel(filePath, sheetName, [randomString]);
 
-  console.log(`Email '${randomString}' berhasil disimpan ke ${filePath} di sheet '${sheetName}'`);
+  console.log(`Data '${randomString}' berhasil disimpan ke ${filePath} di sheet '${sheetName}'`);
 
   
 });
@@ -141,11 +180,12 @@ console.log(randomString);
 Then('Klik Save, dan hasil berhasil',{ timeout: 1555000 }, async function () {
   await page.getByRole('button', { name: 'Save' }).click();
   // await page.waitForSelector('div:nth-child(8)', { state: 'hidden' });
-
+  await page.waitForSelector('.loading-indicator', { state: 'hidden' });
   await page.locator('div').filter({ hasText: new RegExp(`^${randomString}$`, 'i') });
+  await browser.close();
   // await page.locator('div').filter({ hasText: /^Tag Name$/ }).getByRole('textbox').click({
   //   button: 'right'
   // });
   // await page.locator(`text=/.*${randomString}.*/i`).waitFor();
-  await browser.close();
+  
 });

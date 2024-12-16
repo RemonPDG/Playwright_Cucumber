@@ -5,7 +5,11 @@
   "scripts": {
     "test:cucumber": "cucumber-js --require ./steps/ --format json:cucumber-report.json",
     "report": "node generate-report.js",
-    "test-and-report": "npm run test:cucumber && npm run report"
+    "test-and-report": "npm run test:cucumber && npm run report",
+    "test:fitur1": "npx cucumber-js --tags '@urutan1'",
+    "test:fitur2": "npx cucumber-js --tags '@urutan2'",
+    "test:fitur3": "npx cucumber-js --tags '@urutan3'",
+    "test:semua": "npm run test:fitur1 && npm run test:fitur2 && npm run test:fitur3"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +19,7 @@
     "@playwright/test": "^1.49.0",
     "chai": "^5.1.2",
     "playwright": "^1.49.0",
+    "playwright-core": "^1.49.1",
     "puppeteer": "^23.10.1",
     "puppeteer-video-recorder": "^1.0.5"
   },
