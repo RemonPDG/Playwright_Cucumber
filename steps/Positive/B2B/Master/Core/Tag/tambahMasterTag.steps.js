@@ -1,34 +1,18 @@
-const { Given, When, Then} = require('@cucumber/cucumber');
+const { Given, When, Then, Before,setDefaultTimeout} = require('@cucumber/cucumber');
+// const { AfterStep } = require('@cucumber/cucumber');
 // const { expect } = require('@playwright/test');
 const { chromium, firefox } = require('playwright');
 const XLSX = require('xlsx');
+// const fs = require('fs-extra');
 const path = require('path'); // Tambahkan ini di awal file
 const fs = require('fs');
-const { setWorldConstructor } = require('@cucumber/cucumber');
 
-// class CustomWorld {
-//   constructor({ parameters }) {
-//     this.browser = null;
-//     this.firefoxPath = parameters.firefoxExecutablePath; // Ambil path dari konfigurasi
-//   }
-
-//   async launchBrowser() {
-//     this.browser = await firefox.launch({
-//       headless: false,
-//       executablePath: this.firefoxPath,
-//     });
-//     this.context = await this.browser.newContext();
-//     this.page = await this.context.newPage();
-//   }
-
-//   async closeBrowser() {
-//     if (this.browser) {
-//       await this.browser.close();
-//     }
-//   }
-// }
-
-// setWorldConstructor(CustomWorld);
+// Before(async function () {
+//   browser = await chromium.launch({ headless: false }); // Meluncurkan browser
+//   const context = await browser.newContext(); // Membuat konteks baru
+//   page = await context.newPage(); // Membuka halaman baru
+//   this.page = page; // Membuat halaman tersedia untuk langkah berikutnya
+// });
 
 function readExcelFile(filePath) {
   const workbook = XLSX.readFile(filePath);
@@ -93,49 +77,51 @@ function writeDataToExcel(filePath, sheetName, data) {
     XLSX.writeFile(workbook, filePath);
 }
 
+
+
 // Fungsi login
 Given('Login berhasil',{ timeout: 1555000 }, async function () {
-  browser = await firefox.launch({ 
-    headless: false,
-    // executablePath: 'C:\\Program Files\\Firefox Nightly\\firefox.exe',
-    // executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
-    // executablePath: path.resolve(__dirname, '../../../../../../Mozilla_Firefox/firefox.exe'),
-    // args: ['--no-sandbox', '--disable-setuid-sandbox'], // Argumen tambahan
-    // dumpio: true // Log semua proses ke terminal
-    // executablePath: 'C:/Program Files/Mozilla Firefox/firefox.exe'
-  }); // browser firefox versi 127.0
+  // browser = await chromium.launch({ 
+  //   headless: false,
+  // //   // executablePath: 'C:\\Program Files\\Firefox Nightly\\firefox.exe',
+  // //   // executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+  // //   // executablePath: path.resolve(__dirname, '../../../../../../Mozilla_Firefox/firefox.exe'),
+  // //   // args: ['--no-sandbox', '--disable-setuid-sandbox'], // Argumen tambahan
+  // //   // dumpio: true // Log semua proses ke terminal
+  // //   // executablePath: 'C:/Program Files/Mozilla Firefox/firefox.exe'
+  // }); // browser firefox versi 127.0
 
 
   
-  console.log(`Firefox Version: ${browser.version()}`);
-  const context = await browser.newContext({
-    // userDataDir: 'C:\\path\\to\\your\\custom\\profile',
-  });
-  page = await context.newPage();
-  await page.goto('https://ui-qc-b2b.bhakti.co.id/auth/login/phoenix');
-  await page.locator('input[name="email"]').click();
-  await page.locator('input[name="email"]').fill(data1[1][0]);
-  await page.locator('input[name="email"]').press('Tab');
-  await page.locator('#password').fill(data1[1][1].toString());
-  await page.locator('#password').press('Enter');
-  await page.waitForSelector('#nb-global-spinner', { state: 'hidden' });
-  await page.waitForSelector('div:nth-child(8)', { state: 'hidden' });
+  // console.log(`Firefox Version: ${browser.version()}`);
+  // const context = await browser.newContext({
+  //   // userDataDir: 'C:\\path\\to\\your\\custom\\profile',
+  // });
+  // page = await context.newPage();
+  await this.page.goto('https://ui-qc-b2b.bhakti.co.id/auth/login/phoenix');
+  await this.page.locator('input[name="email"]').click();
+  await this.page.locator('input[name="email"]').fill(data1[1][0]);
+  await this.page.locator('input[name="email"]').press('Tab');
+  await this.page.locator('#password').fill(data1[1][1].toString());
+  await this.page.locator('#password').press('Enter');
+  await this.page.waitForSelector('#nb-global-spinner', { state: 'hidden' });
+  await this.page.waitForSelector('div:nth-child(8)', { state: 'hidden' });
   // const loginSuccess = this.page.locator('text=Dashboard'); // Pastikan elemen ini ada setelah login
   // await expect(loginSuccess).toBeVisible();
 });
 
 // Navigasi ke Master > Core > Tag
 Given('Pergi ke Master', async function () {
-  await page.getByLabel('Toggle Master').click();
+  await this.page.getByLabel('Toggle Master').click();
 });
 
 Given('Pergi ke Core', async function () {
-  await page.getByLabel('Toggle Core').click();
+  await this.page.getByLabel('Toggle Core').click();
 });
 
 Given('Pergi ke Tag',{ timeout: 1555000 }, async function () {
-  await page.getByLabel('Toggle Tag').click();
-  await page.waitForSelector('div:nth-child(8)', { state: 'hidden' });
+  await this.page.getByLabel('Toggle Tag').click();
+  await this.page.waitForSelector('div:nth-child(8)', { state: 'hidden' });
 });
 
 // Memastikan tampilan list tag
@@ -146,23 +132,23 @@ When('Saya melihat tampilan list tag', async function () {
 // Klik tombol Create New
 When('Klik Create New',{ timeout: 1555000 }, async function () {
   // Tunggu hingga elemen yang diinginkan menghilang
-  await page.waitForSelector('div:nth-child(8)', { state: 'hidden' });
+  await this.page.waitForSelector('div:nth-child(8)', { state: 'hidden' });
   // Klik tombol "Create New"
-  await page.getByRole('button', { name: 'Create New' }).click();
+  await this.page.getByRole('button', { name: 'Create New' }).click();
 });
 
 // Isi data tag baru
 When('Isi datanya',{ timeout: 1555000 }, async function () {
-  await page.getByText('Pilih Tag Category').click();
-  await page.getByText('PRODUCT', { exact: true }).click();
-  await page.getByText('CAMPAIGN_GROUP', { exact: true }).click();
-  await page.getByText('DIVISION_GROUP').click();
-  await page.getByRole('textbox').first().click();
-  await page.getByRole('textbox').first().fill(randomString);
-  await page.getByRole('textbox').nth(1).click();
-  await page.locator('div:nth-child(2) > div > .col-lg-9 > .form-control').first().fill(data2[1][1]);
-  await page.locator('textarea').click();
-  await page.locator('textarea').fill(data2[1][2]);
+  await this.page.getByText('Pilih Tag Category').click();
+  await this.page.getByText('PRODUCT', { exact: true }).click();
+  await this.page.getByText('CAMPAIGN_GROUP', { exact: true }).click();
+  await this.page.getByText('DIVISION_GROUP').click();
+  await this.page.getByRole('textbox').first().click();
+  await this.page.getByRole('textbox').first().fill(randomString);
+  await this.page.getByRole('textbox').nth(1).click();
+  await this.page.locator('div:nth-child(2) > div > .col-lg-9 > .form-control').first().fill(data2[1][1]);
+  await this.page.locator('textarea').click();
+  await this.page.locator('textarea').fill(data2[1][2]);
 
   const excelFilePath = path.resolve(__dirname, '../../../../../../Excel/B2B.xlsx');
   const filePath = excelFilePath; // Lokasi file Excel Anda
@@ -178,14 +164,32 @@ console.log(randomString);
 
 // Klik Save dan verifikasi hasil
 Then('Klik Save, dan hasil berhasil',{ timeout: 1555000 }, async function () {
-  await page.getByRole('button', { name: 'Save' }).click();
+  await this.page.getByRole('button', { name: 'Save' }).click();
   // await page.waitForSelector('div:nth-child(8)', { state: 'hidden' });
-  await page.waitForSelector('.loading-indicator', { state: 'hidden' });
-  await page.locator('div').filter({ hasText: new RegExp(`^${randomString}$`, 'i') });
-  await browser.close();
+  await this.page.waitForSelector('.loading-indicator', { state: 'hidden' });
+  await this.page.locator('div').filter({ hasText: new RegExp(`^${randomString}$`, 'i') });
+  // await this.browser.close();
   // await page.locator('div').filter({ hasText: /^Tag Name$/ }).getByRole('textbox').click({
   //   button: 'right'
   // });
   // await page.locator(`text=/.*${randomString}.*/i`).waitFor();
   
 });
+
+// const { After } = require('@cucumber/cucumber');
+
+// const { AfterStep } = require('@cucumber/cucumber');
+// const fs = require('fs-extra');
+
+// AfterStep(async function (scenario) {
+//   if (this.page) {
+//     const screenshotPath = `reports/screenshots/${scenario.pickle.name}.png`;
+//     await fs.ensureDir('reports/screenshots'); // Pastikan direktori ada
+//     await this.page.screenshot({ path: screenshotPath }); // Ambil screenshot
+//   } else {
+//     console.error('Error: this.page is not defined!');
+//   }
+// });
+// After(async function () {
+//   await browser.close(); // Menutup browser setelah semua langkah selesai
+// });

@@ -3,3 +3,8 @@ node_modules/
 *.log
 playwright-report/
 Mozilla_Firefox/
+reports/html/assets/screenshots/*.png
+reports/html/assets/videos/*.webm
+reports/videos/*.webm
+reports/screenshots/*.png
+

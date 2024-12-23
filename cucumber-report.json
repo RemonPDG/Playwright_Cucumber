@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9858290800
+              "duration": 5487827500
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 521928200
+              "duration": 492364999
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 284208499
+              "duration": 54223399
             }
           },
           {
@@ -58,7 +58,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 185592000
+              "duration": 72922999
             }
           },
           {
@@ -71,7 +71,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2211500
+              "duration": 1663700
             }
           },
           {
@@ -84,7 +84,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14418125200
+              "duration": 14549646000
             }
           },
           {
@@ -97,7 +97,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14814284899
+              "duration": 11575490000
             }
           },
           {
@@ -110,7 +110,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9533069299
+              "duration": 9141057699
             }
           }
         ],
@@ -151,11 +151,11 @@
             "line": 10,
             "name": "Login B2B berhasil",
             "match": {
-              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\editMasterTag.steps.js:36"
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\editMasterTag.steps.js:66"
             },
             "result": {
               "status": "passed",
-              "duration": 6033602299
+              "duration": 5347597699
             }
           },
           {
@@ -164,11 +164,11 @@
             "line": 11,
             "name": "Master",
             "match": {
-              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\editMasterTag.steps.js:53"
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\editMasterTag.steps.js:83"
             },
             "result": {
               "status": "passed",
-              "duration": 137332800
+              "duration": 85349400
             }
           },
           {
@@ -177,11 +177,11 @@
             "line": 12,
             "name": "Core",
             "match": {
-              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\editMasterTag.steps.js:57"
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\editMasterTag.steps.js:87"
             },
             "result": {
               "status": "passed",
-              "duration": 119976600
+              "duration": 71955899
             }
           },
           {
@@ -190,11 +190,11 @@
             "line": 13,
             "name": "Tag",
             "match": {
-              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\editMasterTag.steps.js:61"
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\editMasterTag.steps.js:91"
             },
             "result": {
               "status": "passed",
-              "duration": 114072899
+              "duration": 69003899
             }
           },
           {
@@ -203,11 +203,11 @@
             "line": 14,
             "name": "Saya melihat tampilan semua list Tag",
             "match": {
-              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\editMasterTag.steps.js:67"
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\editMasterTag.steps.js:97"
             },
             "result": {
               "status": "passed",
-              "duration": 2798799
+              "duration": 899199
             }
           },
           {
@@ -216,11 +216,11 @@
             "line": 15,
             "name": "Cari data yang diinput sebelumnya di excel",
             "match": {
-              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\editMasterTag.steps.js:71"
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\editMasterTag.steps.js:101"
             },
             "result": {
               "status": "passed",
-              "duration": 11674089799
+              "duration": 13552416100
             }
           },
           {
@@ -229,12 +229,11 @@
             "line": 16,
             "name": "Klik datanya",
             "match": {
-              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\editMasterTag.steps.js:79"
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\editMasterTag.steps.js:109"
             },
             "result": {
-              "status": "failed",
-              "duration": 30008301200,
-              "error_message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('cell', { name: 'FsJhuNvUfo' })\u001b[22m\n\n    at World.<anonymous> (C:\\Users\\kurni\\playwright-cucumber\\steps\\Positive\\B2B\\Master\\Core\\Tag\\editMasterTag.steps.js:80:63)"
+              "status": "passed",
+              "duration": 1007640299
             }
           },
           {
@@ -243,11 +242,11 @@
             "line": 17,
             "name": "Klik Edit",
             "match": {
-              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\editMasterTag.steps.js:84"
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\editMasterTag.steps.js:114"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 20293971899
             }
           },
           {
@@ -256,11 +255,11 @@
             "line": 18,
             "name": "Isi Data yang mau dirubah",
             "match": {
-              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\editMasterTag.steps.js:90"
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\editMasterTag.steps.js:120"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 178286399
             }
           },
           {
@@ -269,11 +268,12 @@
             "line": 19,
             "name": "Klik Save, dan hasil berhasil di edit",
             "match": {
-              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\editMasterTag.steps.js:98"
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\editMasterTag.steps.js:128"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 326183550799,
+              "error_message": "page.waitForSelector: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('.loading-indicator') to be hidden\u001b[22m\n\u001b[2m    637 × locator resolved to visible <div _ngcontent-gle-c167=\"\" class=\"loading-indicator\">…</div>\u001b[22m\n\n    at World.<anonymous> (C:\\Users\\kurni\\playwright-cucumber\\steps\\Positive\\B2B\\Master\\Core\\Tag\\editMasterTag.steps.js:131:14)"
             }
           }
         ],
@@ -317,9 +317,8 @@
               "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\hapusMasterTag.steps.js:36"
             },
             "result": {
-              "status": "failed",
-              "duration": 2474350699,
-              "error_message": "page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://ui-qc-b2b.bhakti.co.id/auth/login/phoenix\", waiting until \"load\"\u001b[22m\n\n    at World.<anonymous> (C:\\Users\\kurni\\playwright-cucumber\\steps\\Positive\\B2B\\Master\\Core\\Tag\\hapusMasterTag.steps.js:40:14)"
+              "status": "passed",
+              "duration": 10084719299
             }
           },
           {
@@ -331,8 +330,8 @@
               "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\hapusMasterTag.steps.js:53"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 73071799
             }
           },
           {
@@ -344,8 +343,8 @@
               "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\hapusMasterTag.steps.js:57"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 49481000
             }
           },
           {
@@ -357,8 +356,8 @@
               "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\hapusMasterTag.steps.js:61"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 56240600
             }
           },
           {
@@ -370,8 +369,8 @@
               "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\hapusMasterTag.steps.js:67"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 939599
             }
           },
           {
@@ -383,8 +382,8 @@
               "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\hapusMasterTag.steps.js:71"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 14615548000
             }
           },
           {
@@ -396,8 +395,8 @@
               "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\hapusMasterTag.steps.js:79"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1510751300
             }
           },
           {
@@ -409,8 +408,8 @@
               "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\hapusMasterTag.steps.js:84"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 8893781100
             }
           },
           {
@@ -422,8 +421,8 @@
               "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\hapusMasterTag.steps.js:90"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 431549999
             }
           },
           {
@@ -435,8 +434,8 @@
               "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\hapusMasterTag.steps.js:97"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 75580399
             }
           }
         ],

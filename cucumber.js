@@ -1,15 +1,20 @@
 module.exports = {
   default: {
-    require: ['./steps/**/*.steps.js'], // Cari semua file step definitions
-    paths: ['./features/**/*.feature'], // Cari semua file feature
-    format: ['progress', 'json:cucumber-report.json'], // Output format
+    require: [
+      './steps/**/Tag/tambahMasterTag.steps.js',
+      'hooks.js'
+    ], // Sama dengan default
+    format: ['json:reports/json/cucumber_report.json'],
+    paths: ['./features/**/Tag/tambahMasterTag.feature'],
     parallel: 1, // Menjalankan dalam 1 thread
-    //publishQuiet: true // Menonaktifkan laporan otomatis ke server Cucumber
   },
 
   tambah_mastertag: {
-    require: ['./steps/**/Tag/tambahMasterTag.steps.js'], // Sama dengan default
-    format: ['progress', 'json:cucumber-report.json'],
+    require: [
+      './steps/**/Tag/tambahMasterTag.steps.js',
+      'hooks.js'
+    ], // Sama dengan default
+    format: ['json:reports/json/cucumber_report.json'],
     paths: ['./features/**/Tag/tambahMasterTag.feature'],
     parallel: 1, // Menjalankan dalam 1 thread
     // worldParameters : {
@@ -18,13 +23,13 @@ module.exports = {
   },
   edit_mastertag: {
     require: ['./steps/**/Tag/editMasterTag.steps.js'], // Sama dengan default
-    format: ['progress', 'json:cucumber-report.json'],
+    // format: ['progress', 'json:cucumber-report.json'],
     paths: ['./features/**/Tag/editMasterTag.feature'],
     parallel: 1, // Menjalankan dalam 1 thread
   },
   hapus_mastertag: {
     require: ['./steps/**/Tag/hapusMasterTag.steps.js'], // Sama dengan default
-    format: ['progress', 'json:cucumber-report.json'],
+    // format: ['progress', 'json:cucumber-report.json'],
     paths: ['./features/**/Tag/hapusMasterTag.feature'],
     parallel: 1, // Menjalankan dalam 1 thread
   },
@@ -34,7 +39,7 @@ module.exports = {
       './steps/**/Tag/editMasterTag.steps.js',
       './steps/**/Tag/hapusMasterTag.steps.js'
     ], // Sama dengan default
-    format: ['progress', 'json:cucumber-report.json'],
+    format: ['progress', 'json:reports/json/cucumber_report.json'],
     paths: [
       './features/**/Tag/tambahMasterTag.feature',
       './features/**/Tag/editMasterTag.feature',

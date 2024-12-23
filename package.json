@@ -4,21 +4,22 @@
   "main": "index.js",
   "scripts": {
     "test:cucumber": "cucumber-js --require ./steps/ --format json:cucumber-report.json",
-    "report": "node generate-report.js",
+    "report": "node report-generator.js",
     "test-and-report": "npm run test:cucumber && npm run report",
     "test:fitur1": "npx cucumber-js --tags '@urutan1'",
     "test:fitur2": "npx cucumber-js --tags '@urutan2'",
     "test:fitur3": "npx cucumber-js --tags '@urutan3'",
-    "test:semua": "npm run test:fitur1 && npm run test:fitur2 && npm run test:fitur3"
+    "test:semua": "npm run test:fitur1 && npm run test:fitur2 && npm run test:fitur3",
+    "generate-report": "node report-generator.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@playwright/test": "^1.49.0",
+    "@playwright/test": "^1.49.1",
     "chai": "^5.1.2",
-    "playwright": "^1.49.0",
+    "playwright": "^1.49.1",
     "playwright-core": "^1.49.1",
     "puppeteer": "^23.10.1",
     "puppeteer-video-recorder": "^1.0.5"
@@ -26,6 +27,8 @@
   "devDependencies": {
     "@cucumber/cucumber": "^11.1.0",
     "cucumber-html-reporter": "^6.0.0",
+    "fs-extra": "^11.2.0",
+    "multiple-cucumber-html-reporter": "^3.8.0",
     "xlsx": "^0.18.5"
   }
 }

@@ -19,7 +19,37 @@ function readExcelFile(filePath) {
   const data2 = XLSX.utils.sheet_to_json(worksheet2, { header: 1 });
 
   return { data1, lastdata: data2[data2.length - 1] };
+
 }
+
+// let rowIndex = 1;  // Baris pertama (row 2) untuk diinput oleh testcase 1
+
+// Given('I navigate to the login page and enter data', async () => {
+//   await page.goto('https://example.com/login');
+  
+//   // Menulis data ke baris yang sesuai berdasarkan rowIndex
+//   data[rowIndex] = ['testuser', 'password123'];  // Menulis data ke baris rowIndex
+//   rowIndex++;  // Pindah ke baris berikutnya untuk testcase selanjutnya
+  
+//   await page.fill('input[name="username"]', data[rowIndex - 1][0]);
+//   await page.fill('input[name="password"]', data[rowIndex - 1][1]);
+//   await page.click('button[type="submit"]');
+// });
+
+// When('I take data from the previous row for validation', async () => {
+//   // Ambil data dari row sebelumnya (testcase 1 sudah mengisi data di row 2)
+//   const username = data[rowIndex - 1][0];  // Mengambil username dari baris yang baru saja diinput
+//   const password = data[rowIndex - 1][1];  // Mengambil password dari baris yang baru saja diinput
+  
+//   console.log(`Data yang diambil dari baris ${rowIndex - 1}: Username: ${username}, Password: ${password}`);
+  
+//   // Verifikasi atau proses lainnya
+//   await page.fill('input[name="username"]', username);
+//   await page.fill('input[name="password"]', password);
+//   await page.click('button[type="submit"]');
+// });
+
+
 // Jalur relatif ke file Excel
 const excelFilePath = path.resolve(__dirname, '../../../../../../Excel/B2B.xlsx');
 
