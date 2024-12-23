@@ -4,7 +4,7 @@ const path = require('path');
 reporter.generate({
   jsonDir: 'reports/json/',  // Folder yang berisi cucumber_report.json
   reportPath: 'reports/html/', // Folder untuk laporan HTML
-  // launchReport: true,
+  launchReport: true,
   metadata: {
     browser: {
       name: 'chromium',

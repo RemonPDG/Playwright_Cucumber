@@ -1,4 +1,4 @@
-const { Given, When, Then, And} = require('@cucumber/cucumber');
+const { Given, When, Then} = require('@cucumber/cucumber');
 // const { expect } = require('@playwright/test');
 const { chromium } = require('playwright');
 const XLSX = require('xlsx');
@@ -64,33 +64,33 @@ const { data1, lastdata } = readExcelFile(excelFilePath);
 
 // Fungsi login
 Given('Login B2B berhasil',{ timeout: 1555000 }, async function () {
-  browser = await chromium.launch({ headless: false });
-  const context = await browser.newContext();
-  page = await context.newPage();
-  await page.goto('https://ui-qc-b2b.bhakti.co.id/auth/login/phoenix');
-  await page.locator('input[name="email"]').click();
-  await page.locator('input[name="email"]').fill(data1[1][0]);
-  await page.locator('input[name="email"]').press('Tab');
-  await page.locator('#password').fill(data1[1][1].toString());
-  await page.locator('#password').press('Enter');
+  // browser = await chromium.launch({ headless: false });
+  // const context = await browser.newContext();
+  // page = await context.newPage();
+  await this.page.goto('https://ui-qc-b2b.bhakti.co.id/auth/login/phoenix');
+  await this.page.locator('input[name="email"]').click();
+  await this.page.locator('input[name="email"]').fill(data1[1][0]);
+  await this.page.locator('input[name="email"]').press('Tab');
+  await this.page.locator('#password').fill(data1[1][1].toString());
+  await this.page.locator('#password').press('Enter');
   // await page.waitForSelector('#nb-global-spinner', { state: 'hidden' });
-  await page.waitForSelector('.loading-indicator', { state: 'hidden' });
+  await this.page.waitForSelector('.loading-indicator', { state: 'hidden' });
   // const loginSuccess = this.page.locator('text=Dashboard'); // Pastikan elemen ini ada setelah login
   // await expect(loginSuccess).toBeVisible();
 });
 
 // Navigasi ke Master > Core > Tag
 Given('Master', async function () {
-  await page.getByLabel('Toggle Master').click();
+  await this.page.getByLabel('Toggle Master').click();
 });
 
 Given('Core', async function () {
-  await page.getByLabel('Toggle Core').click();
+  await this.page.getByLabel('Toggle Core').click();
 });
 
 Given('Tag',{ timeout: 1555000 }, async function () {
-  await page.getByLabel('Toggle Tag').click();
-  await page.waitForSelector('.loading-indicator', { state: 'hidden' });
+  await this.page.getByLabel('Toggle Tag').click();
+  await this.page.waitForSelector('.loading-indicator', { state: 'hidden' });
 });
 
 // Memastikan tampilan list tag
@@ -99,36 +99,35 @@ When('Saya melihat tampilan semua list Tag', async function () {
 });
 
 When('Cari data yang diinput sebelumnya di excel',{ timeout: 1555000 }, async function () {
-  await page.getByPlaceholder('Search Data').click();
-  await page.getByPlaceholder('Search Data').fill(lastdata.toString());
-  await page.getByPlaceholder('Search Data').press('Enter');
-  await page.waitForSelector('.loading-indicator', { state: 'hidden' });
+  await this.page.getByPlaceholder('Search Data').click();
+  await this.page.getByPlaceholder('Search Data').fill(lastdata.toString());
+  await this.page.getByPlaceholder('Search Data').press('Enter');
+  await this.page.waitForSelector('.loading-indicator', { state: 'hidden' });
 });
 
 // Klik tombol Create New
 When('Klik datanya',{ timeout: 1555000 }, async function () {
-  await page.getByRole('cell', { name: lastdata.toString() }).click();
+  await this.page.getByRole('cell', { name: lastdata.toString() }).click();
   //   await page.waitForSelector('.loading-indicator', { state: 'hidden' });
 });
 
 When('Klik Edit',{ timeout: 1555000 }, async function () {
-  await page.getByRole('button', { name: 'Edit', exact: true }).click();
-  await page.waitForSelector('.loading-indicator', { state: 'hidden' });
+  await this.page.getByRole('button', { name: 'Edit', exact: true }).click();
+  await this.page.waitForSelector('.loading-indicator', { state: 'hidden' });
 });
 
 // Isi data tag baru
 When('Isi Data yang mau dirubah',{ timeout: 1555000 }, async function () {
-  await page.locator('div:nth-child(2) > div > .col-lg-9 > .form-control').first().fill('#ffffff');
-  await page.locator('textarea').click();
-  await page.locator('textarea').fill('Test lagi maskos.');
+  await this.page.locator('div:nth-child(2) > div > .col-lg-9 > .form-control').first().fill('#ffffff');
+  await this.page.locator('textarea').click();
+  await this.page.locator('textarea').fill('Test lagi maskos.');
   
 });
 
 // Klik Save dan verifikasi hasil
 Then('Klik Save, dan hasil berhasil di edit',{ timeout: 1555000 }, async function () {
-  page.setDefaultTimeout(1555000);
-  await page.getByRole('button', { name: 'Save' }).click();
-  await page.waitForSelector('.loading-indicator', { state: 'hidden' });
+  await this.page.getByRole('button', { name: 'Save' }).click();
+  await this.page.waitForSelector('.loading-indicator', { state: 'hidden' });
 
   // await page.locator('div').filter({ hasText: /^Tag Color$/ }).getByRole('textbox').click({
   //   button: 'right'
@@ -140,10 +139,10 @@ Then('Klik Save, dan hasil berhasil di edit',{ timeout: 1555000 }, async functio
   //   button: 'right'
   // });
 
-  await page.locator('div').filter({ hasText: new RegExp(`^${lastdata}$`, 'i') });
+  await this.page.locator('div').filter({ hasText: new RegExp(`^${lastdata}$`, 'i') });
   // await page.locator('div').filter({ hasText: /^Tag Name$/ }).getByRole('textbox').click({
   //   button: 'right'
   // });
   // await page.locator(`text=/.*${randomString}.*/i`).waitFor();
-  await browser.close();
+  // await browser.close();
 });

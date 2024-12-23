@@ -37,9 +37,10 @@ module.exports = {
     require: [
       './steps/**/Tag/tambahMasterTag.steps.js',
       './steps/**/Tag/editMasterTag.steps.js',
-      './steps/**/Tag/hapusMasterTag.steps.js'
+      './steps/**/Tag/hapusMasterTag.steps.js',
+      'hooks.js'
     ], // Sama dengan default
-    format: ['progress', 'json:reports/json/cucumber_report.json'],
+    format: ['json:reports/json/cucumber_report.json'],
     paths: [
       './features/**/Tag/tambahMasterTag.feature',
       './features/**/Tag/editMasterTag.feature',
