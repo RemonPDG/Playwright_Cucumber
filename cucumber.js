@@ -59,7 +59,7 @@ module.exports = {
       './steps/**/City/tambahMasterCity.steps.js',
       'hooks.js'
     ], // Sama dengan default
-    format: ['json:reports/json/cucumber_report.json'],
+    // format: ['json:reports/json/cucumber_report.json'],
     paths: [
       './features/**/City/tambahMasterCity.feature',
     ],
