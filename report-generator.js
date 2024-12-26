@@ -17,7 +17,7 @@ reporter.generate({
     },
   },
   customData: {
-    title: 'Playwright Cucumber Report',
+    title: 'B2B Automation Report',
     data: [
       { label: 'Project', value: 'Playwright-Cucumber' },
       { label: 'Release', value: '1.0.0' },

@@ -1,4 +1,4 @@
-const { Given, When, Then} = require('@cucumber/cucumber');
+const { Before,Given, When, Then} = require('@cucumber/cucumber');
 // const { expect } = require('@playwright/test');
 const { chromium } = require('playwright');
 const XLSX = require('xlsx');
@@ -17,7 +17,6 @@ function readExcelFile(filePath) {
   const sheetName2 = workbook.SheetNames[2]; // Ganti 1 dengan nama sheet jika diketahui
   const worksheet2 = workbook.Sheets[sheetName2];
   const data2 = XLSX.utils.sheet_to_json(worksheet2, { header: 1 });
-
   return { data1, lastdata: data2[data2.length - 1] };
 
 }
@@ -61,6 +60,7 @@ const { data1, lastdata } = readExcelFile(excelFilePath);
 // Baca data baris terakhir
 // console.log('Data dari Sheet 1:', data1);
 // console.log('Data dari Sheet 2:', lastdata);
+
 
 // Fungsi login
 Given('Login B2B berhasil',{ timeout: 1555000 }, async function () {
@@ -127,6 +127,7 @@ When('Isi Data yang mau dirubah',{ timeout: 1555000 }, async function () {
 // Klik Save dan verifikasi hasil
 Then('Klik Save, dan hasil berhasil di edit',{ timeout: 1555000 }, async function () {
   await this.page.getByRole('button', { name: 'Save' }).click();
+  await this.page.waitForSelector('.loading-indicator', { state: 'visible' });
   await this.page.waitForSelector('.loading-indicator', { state: 'hidden' });
 
   // await page.locator('div').filter({ hasText: /^Tag Color$/ }).getByRole('textbox').click({

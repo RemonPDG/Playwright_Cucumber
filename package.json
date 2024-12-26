@@ -10,6 +10,7 @@
     "test:fitur2": "npx cucumber-js --tags '@urutan2'",
     "test:fitur3": "npx cucumber-js --tags '@urutan3'",
     "test:semua": "npm run test:fitur1 && npm run test:fitur2 && npm run test:fitur3",
+    "master_tag": "npx cucumber-js --profile master_tag_v2 --tags \"@tambah\" --format json:reports/json/tambah_report.json && npx cucumber-js --profile master_tag_v2 --tags \"@edit\" --format json:reports/json/edit_report.json && npx cucumber-js --profile master_tag_v2 --tags \"@hapus\" --format json:reports/json/hapus_report.json && node report-generator.js",
     "generate-report": "node report-generator.js"
   },
   "keywords": [],

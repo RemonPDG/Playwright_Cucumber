@@ -155,6 +155,7 @@ When('Isi datanya',{ timeout: 1555000 }, async function () {
   const sheetName = "TagSave";     // Nama sheet di file Excel
 
   writeDataToExcel(filePath, sheetName, [randomString]);
+  await new Promise(resolve => setTimeout(resolve, 1000));
 
   console.log(`Data '${randomString}' berhasil disimpan ke ${filePath} di sheet '${sheetName}'`);
 

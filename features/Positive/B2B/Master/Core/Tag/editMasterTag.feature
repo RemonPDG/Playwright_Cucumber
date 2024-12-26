@@ -3,7 +3,7 @@
 #   Scenario: Login ke B2B dan tambah Master > Core > Tag
 #     Given Saya login ke B2B dan ke Menu Master > Core > Tag
 #     Then Saat save master tag harus berhasil
-@urutan2
+@edit
 Feature: Mengedit Master Tag
 
   Scenario: Mengedit Tag di Master Tag

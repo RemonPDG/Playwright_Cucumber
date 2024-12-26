@@ -96,6 +96,7 @@ When('Isi Alasannya',{ timeout: 1555000 }, async function () {
 // Klik Save dan verifikasi hasil
 Then('Klik Hapus, dan hasil berhasil di hapus',{ timeout: 1555000 }, async function () {
   await this.page.getByRole('button', { name: 'OK' }).click();
+  await this.page.waitForSelector('.loading-indicator', { state: 'visible' });
   await this.page.waitForSelector('.loading-indicator', { state: 'hidden' });
   await this.page.locator('div').filter({ hasText: new RegExp(`^${lastdata}$`, 'i') });
   
