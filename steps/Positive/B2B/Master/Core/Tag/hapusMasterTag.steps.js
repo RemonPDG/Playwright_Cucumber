@@ -7,6 +7,8 @@ const fs = require('fs');
 
 function readExcelFile(filePath) {
   const workbook = XLSX.readFile(filePath);
+
+  
   
   // Ambil data dari sheet pertama
   const sheetName1 = workbook.SheetNames[0]; // Ganti 0 dengan nama sheet jika diketahui
