@@ -1,0 +1,290 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "menambah-master-tag;menambahkan-tag-baru-di-master-tag",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Menambahkan Tag Baru di Master Tag",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 786998599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "Login berhasil",
+            "match": {
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.steps.js:83"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1295215098,
+              "error_message": "page.goto: net::ERR_ABORTED; maybe frame was detached?\nCall log:\n\u001b[2m  - navigating to \"https://ui-qc-b2b.bhakti.co.id/auth/login/phoenix\", waiting until \"load\"\u001b[22m\n\n    at World.<anonymous> (C:\\Users\\kurni\\playwright-cucumber\\steps\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.steps.js:101:19)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Pergi ke Master",
+            "match": {
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.steps.js:114"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Pergi ke Core",
+            "match": {
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.steps.js:118"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Pergi ke Tag",
+            "match": {
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.steps.js:122"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "Saya melihat tampilan list tag",
+            "match": {
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.steps.js:128"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Klik Create New",
+            "match": {
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.steps.js:133"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Isi datanya",
+            "match": {
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.steps.js:141"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Klik Save, dan hasil berhasil",
+            "match": {
+              "location": "steps\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.steps.js:167"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 442401499
+            },
+            "embeddings": [
+              {
+                "data": "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hjDGGEww/vxKAKPLgQFoAPEHAAsQQAAYABhvJ/QAAFtttttttttttttttttt/BtzGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhhMMP79dnAAo8uBAZAA8QcACxAsABgAGG8n9AAAW2222222222222222238G3MYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGEww/v6JGACjy4EBuADxBwALECQAGAAYbyf0AABbbbbbbbbbbbbbbbbbbfwbcxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYTDD+/t14AKPLgQHgAPEHAAsQJAAYABhvJ/QAAFtttttttttttttttttt/BtzGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhhMMP7+3XgAo8uBAggA8QcACxAkABgAGG8n9AAAW2222222222222222238G3MYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGEww/v7deACjy4ECMADxBwALECQAGAAYbyf0AABbbbbbbbbbbbbbbbbbbfwbcxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYTDD+/t14AKPLgQJYAPEHAAsQJAAYABhvJ/QAAFtttttttttttttttttt/BtzGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhhMMP7+3XgAo8uBAoAA8QcACxAkABgAGG8n9AAAW2222222222222222238G3MYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGEww/v7deACjy4ECqADxBwALECQAGAAYbyf0AABbbbbbbbbbbbbbbbbbbfwbcxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYTDD+/t14AKPLgQLQAPEHAAsQJAAYABhvJ/QAAFtttttttttttttttttt/BtzGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhhMMP7+3XgAo8uBAvgA8QcACxAkABgAGG8n9AAAW2222222222222222238G3MYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGEww/v7deACjy4EDIADxBwALECQAGAAYbyf0AABbbbbbbbbbbbbbbbbbbfwbcxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYTDD+/t14AKPLgQNIAPEHAAsQJAAYABhvJ/QAAFtttttttttttttttttt/BtzGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhhMMP7+3XgAo8uBA3AA8QcACxAkABgAGG8n9AAAW2222222222222222238G3MYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGEww/v7deACjy4EDmADxBwALECQAGAAYbyf0AABbbbbbbbbbbbbbbbbbbfwbcxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYTDD+/t14AKPLgQPAAPEHAAsQJAAYABhvJ/QAAFtttttttttttttttttt/BtzGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhhMMP7+3XgAo8uBA+gA8QcACxAkABgAGG8n9AAAW2222222222222222238G3MYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGEww/v7deACjy4EEEADxBwALECQAGAAYbyf0AABbbbbbbbbbbbbbbbbbbfwbcxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYTDD+/t14AKPLgQQ4APEHAAsQJAAYABhvJ/QAAFtttttttttttttttttt/BtzGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhhMMP7+3XgAo8uBBGAA8QcACxAkABgAGG8n9AAAW2222222222222222238G3MYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGEww/v7deACjy4EEiADxBwALECQAGAAYbyf0AABbbbbbbbbbbbbbbbbbbfwbcxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYTDD+/t14AKPLgQSwAPEHAAsQJAAYABhvJ/QAAFtttttttttttttttttt/BtzGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhjDGGMMYYwxhhMMP7+3XgAHFO7a5G7j7OBALeK94EB8YIBqPCBAw==",
+                "mime_type": "video/webm"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tambah",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "menambah-master-tag",
+    "line": 7,
+    "keyword": "Feature",
+    "name": "Menambah Master Tag",
+    "tags": [
+      {
+        "name": "@tambah",
+        "line": 6
+      }
+    ],
+    "uri": "features\\Positive\\B2B\\Master\\Core\\Tag\\tambahMasterTag.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "menambah-master-city;menambahkan-city-baru-di-master-city",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Menambahkan City Baru di Master City",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 683033899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "Loginnya berhasil",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Pergi ke menu Master",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Pergi ke menu Core",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Pergi ke menu City",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "Saya melihat tampilan list city",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Klik Create New di city",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Isi data nya",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Klik Save , dan hasil berhasil",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 19978399,
+              "error_message": "Error: Page did not produce any video frames\n    at Video.path (C:\\Users\\kurni\\playwright-cucumber\\node_modules\\playwright-core\\lib\\client\\video.js:38:26)\n    at async World.<anonymous> (C:\\Users\\kurni\\playwright-cucumber\\hooks.js:50:29)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tambah",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "menambah-master-city",
+    "line": 7,
+    "keyword": "Feature",
+    "name": "Menambah Master City",
+    "tags": [
+      {
+        "name": "@tambah",
+        "line": 6
+      }
+    ],
+    "uri": "features\\Positive\\B2B\\Master\\Core\\City\\tambahMasterCity.feature"
+  }
+]
