@@ -10,10 +10,17 @@
     "test:fitur2": "npx cucumber-js --tags '@urutan2'",
     "test:fitur3": "npx cucumber-js --tags '@urutan3'",
     "test:semua": "npm run test:fitur1 && npm run test:fitur2 && npm run test:fitur3",
+
+
+
+    
     "master_tag": "npx cucumber-js --profile master_tag_v2 --tags \"@tambah\" --format json:reports/json/tambah_report.json && npx cucumber-js --profile master_tag_v2 --tags \"@edit\" --format json:reports/json/edit_report.json && npx cucumber-js --profile master_tag_v2 --tags \"@hapus\" --format json:reports/json/hapus_report.json && node report-generator.js",
     "master_city": "npx cucumber-js --profile master_city --tags \"@tambah\" --format json:reports/json/city_tambah_report.json",
+    "negative_tag_all": "npx cucumber-js --profile negative_tag_all --format json:reports/json/negative_tag_all.json",
     "generate-report": "node report-generator.js",
-    "run-all": "concurrently \"npm run master_tag\" \"npm run master_city\""
+    "run-all": "concurrently \"npm run master_tag\" \"npm run master_city\"",
+    "run-all-v2": "concurrently \"npm run master_tag\" \"npm run negative_tag_all\""
+    
   },
   "keywords": [],
   "author": "",

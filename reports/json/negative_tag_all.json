@@ -1,0 +1,2114 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "negative-menambah-master-tag-(tambah.tag.001);negative-menambahkan-tag-baru-di-master-tag-mengisi-semua-data-tanpa-memilih-tag-category",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Negative Menambahkan Tag Baru di Master Tag Mengisi semua data tanpa memilih Tag Category",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1340963599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "Login B2B berhasil",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Pergi ke menu Master",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Pergi ke menu Core",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Pergi ke menu Tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "Muncul list tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Klik Create New",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Mengisi semua data tanpa memilih Tag Category",
+            "match": {
+              "location": "steps\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.001.steps.js:141"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Klik Save, data tidak berhasil disimpan",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 24164000,
+              "error_message": "Error: ENOENT: no such file or directory, lstat 'C:\\Users\\kurni\\playwright-cucumber\\reports\\videos\\ef70ceedeef3e971931558440bc5f378.webm'"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negtambah001",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "negative-menambah-master-tag-(tambah.tag.001)",
+    "line": 7,
+    "keyword": "Feature",
+    "name": "Negative Menambah Master Tag (tambah.tag.001)",
+    "tags": [
+      {
+        "name": "@negtambah001",
+        "line": 6
+      }
+    ],
+    "uri": "features\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.001.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "negative-menambah-master-tag-(tambah.tag.002);negative-menambahkan-tag-baru-di-master-tag-mengisi-semua-data-tanpa-mengisi-tag-name",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Negative Menambahkan Tag Baru di Master Tag Mengisi semua data tanpa Mengisi Tag Name",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 994002800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "Login B2B berhasil",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Pergi ke menu Master",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Pergi ke menu Core",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Pergi ke menu Tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "Muncul list tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Klik Create New",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Mengisi semua data tanpa Mengisi Tag Name",
+            "match": {
+              "location": "steps\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.002.steps.js:141"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Klik Save, data tidak berhasil disimpan",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 18829600,
+              "error_message": "Error: ENOENT: no such file or directory, lstat 'C:\\Users\\kurni\\playwright-cucumber\\reports\\videos\\e75b1d8831273bcff8b39221b7f873e4.webm'"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negtambah002",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "negative-menambah-master-tag-(tambah.tag.002)",
+    "line": 7,
+    "keyword": "Feature",
+    "name": "Negative Menambah Master Tag (tambah.tag.002)",
+    "tags": [
+      {
+        "name": "@negtambah002",
+        "line": 6
+      }
+    ],
+    "uri": "features\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.002.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "negative-menambah-master-tag-(tambah.tag.003);negative-menambahkan-tag-baru-di-master-tag-dengan-mengisi-semua-data-,pada-tag-name-diisi-300-karakter",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Negative Menambahkan Tag Baru di Master Tag dengan Mengisi semua data ,Pada Tag Name diisi 300 karakter",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 954632399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "Login B2B berhasil",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Pergi ke menu Master",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Pergi ke menu Core",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Pergi ke menu Tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "Muncul list tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Klik Create New",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Mengisi semua data ,Pada Tag Name diisi 300 karakter",
+            "match": {
+              "location": "steps\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.003.steps.js:141"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Klik Save, data tidak berhasil disimpan",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 12399500,
+              "error_message": "Error: ENOENT: no such file or directory, lstat 'C:\\Users\\kurni\\playwright-cucumber\\reports\\videos\\fc83c69a4b0c2f1a9ef514f33a959058.webm'"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negtambah003",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "negative-menambah-master-tag-(tambah.tag.003)",
+    "line": 7,
+    "keyword": "Feature",
+    "name": "Negative Menambah Master Tag (tambah.tag.003)",
+    "tags": [
+      {
+        "name": "@negtambah003",
+        "line": 6
+      }
+    ],
+    "uri": "features\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.003.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "negative-menambah-master-tag-(tambah.tag.004);negative-menambahkan-tag-baru-di-master-tag-mengisi-semua-data-,pada-tag-name-diisi-dengan-spasi",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Negative Menambahkan Tag Baru di Master Tag Mengisi semua data ,Pada Tag Name diisi dengan spasi",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1060436400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "Login B2B berhasil",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Pergi ke menu Master",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Pergi ke menu Core",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Pergi ke menu Tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "Muncul list tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Klik Create New",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Mengisi semua data ,Pada Tag Name diisi dengan spasi",
+            "match": {
+              "location": "steps\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.004.steps.js:141"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Klik Save, data tidak berhasil disimpan",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 17090799,
+              "error_message": "Error: Page did not produce any video frames\n    at Video.path (C:\\Users\\kurni\\playwright-cucumber\\node_modules\\playwright-core\\lib\\client\\video.js:38:26)\n    at async World.<anonymous> (C:\\Users\\kurni\\playwright-cucumber\\hooks.js:50:29)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negtambah004",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "negative-menambah-master-tag-(tambah.tag.004)",
+    "line": 7,
+    "keyword": "Feature",
+    "name": "Negative Menambah Master Tag (tambah.tag.004)",
+    "tags": [
+      {
+        "name": "@negtambah004",
+        "line": 6
+      }
+    ],
+    "uri": "features\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.004.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "negative-menambah-master-tag-(tambah.tag.005);negative-menambahkan-tag-baru-di-master-tag-mengisi-semua-data,pada-tag-name-diisi-dengan-karakter-spesial",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Negative Menambahkan Tag Baru di Master Tag Mengisi semua data,Pada Tag Name diisi dengan karakter spesial",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 836031400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "Login B2B berhasil",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Pergi ke menu Master",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Pergi ke menu Core",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Pergi ke menu Tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "Muncul list tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Klik Create New",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Mengisi semua data,Pada Tag Name diisi dengan karakter spesial",
+            "match": {
+              "location": "steps\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.005.steps.js:141"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Klik Save, data tidak berhasil disimpan",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 15333200,
+              "error_message": "Error: Page did not produce any video frames\n    at Video.path (C:\\Users\\kurni\\playwright-cucumber\\node_modules\\playwright-core\\lib\\client\\video.js:38:26)\n    at async World.<anonymous> (C:\\Users\\kurni\\playwright-cucumber\\hooks.js:50:29)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negtambah005",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "negative-menambah-master-tag-(tambah.tag.005)",
+    "line": 7,
+    "keyword": "Feature",
+    "name": "Negative Menambah Master Tag (tambah.tag.005)",
+    "tags": [
+      {
+        "name": "@negtambah005",
+        "line": 6
+      }
+    ],
+    "uri": "features\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.005.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "negative-menambah-master-tag-(tambah.tag.006);negative-menambahkan-tag-baru-di-master-tag-mengisi-semua-data-,pada-tag-name-diisi-dengan-angka-saja",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Negative Menambahkan Tag Baru di Master Tag Mengisi semua data ,Pada Tag Name diisi dengan angka saja",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 799076000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "Login B2B berhasil",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Pergi ke menu Master",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Pergi ke menu Core",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Pergi ke menu Tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "Muncul list tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Klik Create New",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Mengisi semua data ,Pada Tag Name diisi dengan angka saja",
+            "match": {
+              "location": "steps\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.006.steps.js:141"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Klik Save, data tidak berhasil disimpan",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 13911899,
+              "error_message": "Error: Page did not produce any video frames\n    at Video.path (C:\\Users\\kurni\\playwright-cucumber\\node_modules\\playwright-core\\lib\\client\\video.js:38:26)\n    at async World.<anonymous> (C:\\Users\\kurni\\playwright-cucumber\\hooks.js:50:29)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negtambah006",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "negative-menambah-master-tag-(tambah.tag.006)",
+    "line": 7,
+    "keyword": "Feature",
+    "name": "Negative Menambah Master Tag (tambah.tag.006)",
+    "tags": [
+      {
+        "name": "@negtambah006",
+        "line": 6
+      }
+    ],
+    "uri": "features\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.006.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "negative-menambah-master-tag-(tambah.tag.007);negative-menambahkan-tag-baru-di-master-tag-mengisi-semua-data-,pada-tag-name-diisi-dengan-data-yang-tersave-sebelumnya",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Negative Menambahkan Tag Baru di Master Tag Mengisi semua data ,Pada Tag Name diisi dengan data yang tersave sebelumnya",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 917223299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "Login B2B berhasil",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Pergi ke menu Master",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Pergi ke menu Core",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Pergi ke menu Tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "Muncul list tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Klik Create New",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Mengisi semua data ,Pada Tag Name diisi dengan data yang tersave sebelumnya",
+            "match": {
+              "location": "steps\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.007.steps.js:141"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Klik Save, data tidak berhasil disimpan",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 13837399,
+              "error_message": "Error: Page did not produce any video frames\n    at Video.path (C:\\Users\\kurni\\playwright-cucumber\\node_modules\\playwright-core\\lib\\client\\video.js:38:26)\n    at async World.<anonymous> (C:\\Users\\kurni\\playwright-cucumber\\hooks.js:50:29)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negtambah007",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "negative-menambah-master-tag-(tambah.tag.007)",
+    "line": 7,
+    "keyword": "Feature",
+    "name": "Negative Menambah Master Tag (tambah.tag.007)",
+    "tags": [
+      {
+        "name": "@negtambah007",
+        "line": 6
+      }
+    ],
+    "uri": "features\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.007.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "negative-menambah-master-tag-(tambah.tag.008);negative-menambahkan-tag-baru-di-master-tag-mengisi-semua-data-,pada-tag-color-di-iisi-kosong",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Negative Menambahkan Tag Baru di Master Tag Mengisi semua data ,Pada Tag Color di iisi kosong",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 866676799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "Login B2B berhasil",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Pergi ke menu Master",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Pergi ke menu Core",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Pergi ke menu Tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "Muncul list tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Klik Create New",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Mengisi semua data ,Pada Tag Color di iisi kosong",
+            "match": {
+              "location": "steps\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.008.steps.js:141"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Klik Save, data tidak berhasil disimpan",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 13776499,
+              "error_message": "Error: Page did not produce any video frames\n    at Video.path (C:\\Users\\kurni\\playwright-cucumber\\node_modules\\playwright-core\\lib\\client\\video.js:38:26)\n    at async World.<anonymous> (C:\\Users\\kurni\\playwright-cucumber\\hooks.js:50:29)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negtambah008",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "negative-menambah-master-tag-(tambah.tag.008)",
+    "line": 7,
+    "keyword": "Feature",
+    "name": "Negative Menambah Master Tag (tambah.tag.008)",
+    "tags": [
+      {
+        "name": "@negtambah008",
+        "line": 6
+      }
+    ],
+    "uri": "features\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.008.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "negative-menambah-master-tag-(tambah.tag.009);negative-menambahkan-tag-baru-di-master-tag-mengisi-semua-data-,pada-tag-color-diisi-dengan-warna-yang-tidak-valid",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Negative Menambahkan Tag Baru di Master Tag Mengisi semua data ,Pada Tag Color diisi dengan warna yang tidak valid",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 896006699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "Login B2B berhasil",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Pergi ke menu Master",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Pergi ke menu Core",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Pergi ke menu Tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "Muncul list tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Klik Create New",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Mengisi semua data ,Pada Tag Color diisi dengan warna yang tidak valid",
+            "match": {
+              "location": "steps\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.009.steps.js:141"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Klik Save, data tidak berhasil disimpan",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 15836799,
+              "error_message": "Error: Page did not produce any video frames\n    at Video.path (C:\\Users\\kurni\\playwright-cucumber\\node_modules\\playwright-core\\lib\\client\\video.js:38:26)\n    at async World.<anonymous> (C:\\Users\\kurni\\playwright-cucumber\\hooks.js:50:29)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negtambah009",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "negative-menambah-master-tag-(tambah.tag.009)",
+    "line": 7,
+    "keyword": "Feature",
+    "name": "Negative Menambah Master Tag (tambah.tag.009)",
+    "tags": [
+      {
+        "name": "@negtambah009",
+        "line": 6
+      }
+    ],
+    "uri": "features\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.009.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "negative-menambah-master-tag-(tambah.tag.010);negative-menambahkan-tag-baru-di-master-tag-mengisi-semua-data,-pada-remarks-diisi-dengan-500-karakter",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Negative Menambahkan Tag Baru di Master Tag Mengisi semua Data, Pada Remarks diisi dengan 500 karakter",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1085034099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "Login B2B berhasil",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Pergi ke menu Master",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Pergi ke menu Core",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Pergi ke menu Tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "Muncul list tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Klik Create New",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Mengisi semua Data, Pada Remarks diisi dengan 500 karakter",
+            "match": {
+              "location": "steps\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.010.steps.js:142"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Klik Save, data tidak berhasil disimpan",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 17551699,
+              "error_message": "Error: Page did not produce any video frames\n    at Video.path (C:\\Users\\kurni\\playwright-cucumber\\node_modules\\playwright-core\\lib\\client\\video.js:38:26)\n    at async World.<anonymous> (C:\\Users\\kurni\\playwright-cucumber\\hooks.js:50:29)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negtambah010",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "negative-menambah-master-tag-(tambah.tag.010)",
+    "line": 7,
+    "keyword": "Feature",
+    "name": "Negative Menambah Master Tag (tambah.tag.010)",
+    "tags": [
+      {
+        "name": "@negtambah010",
+        "line": 6
+      }
+    ],
+    "uri": "features\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.010.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "negative-menambah-master-tag-(tambah.tag.011);negative-menambahkan-tag-baru-di-master-tag-mengisi-data-mengisi-remarks-dengan-spasi-saja",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Negative Menambahkan Tag Baru di Master Tag Mengisi Data mengisi Remarks dengan spasi saja",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 917890300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "Login B2B berhasil",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Pergi ke menu Master",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Pergi ke menu Core",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Pergi ke menu Tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "Muncul list tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Klik Create New",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Mengisi semua Data, Pada Remarks diisi dengan spasi saja",
+            "match": {
+              "location": "steps\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.011.steps.js:142"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Klik Save, data tidak berhasil disimpan",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 14793200,
+              "error_message": "Error: Page did not produce any video frames\n    at Video.path (C:\\Users\\kurni\\playwright-cucumber\\node_modules\\playwright-core\\lib\\client\\video.js:38:26)\n    at async World.<anonymous> (C:\\Users\\kurni\\playwright-cucumber\\hooks.js:50:29)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negtambah011",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "negative-menambah-master-tag-(tambah.tag.011)",
+    "line": 7,
+    "keyword": "Feature",
+    "name": "Negative Menambah Master Tag (tambah.tag.011)",
+    "tags": [
+      {
+        "name": "@negtambah011",
+        "line": 6
+      }
+    ],
+    "uri": "features\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.011.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "negative-menambah-master-tag-(tambah.tag.012);negative-menambahkan-tag-baru-di-master-tag-mengisi-data-hanya-di-remarks-saja",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Negative Menambahkan Tag Baru di Master Tag Mengisi data hanya di remarks saja",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1017880000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "Login B2B berhasil",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Pergi ke menu Master",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Pergi ke menu Core",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Pergi ke menu Tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "Muncul list tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Klik Create New",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Mengisi data hanya di remarks saja",
+            "match": {
+              "location": "steps\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.012.steps.js:142"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Klik Save, data tidak berhasil disimpan",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 12899400,
+              "error_message": "Error: Page did not produce any video frames\n    at Video.path (C:\\Users\\kurni\\playwright-cucumber\\node_modules\\playwright-core\\lib\\client\\video.js:38:26)\n    at async World.<anonymous> (C:\\Users\\kurni\\playwright-cucumber\\hooks.js:50:29)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negtambah012",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "negative-menambah-master-tag-(tambah.tag.012)",
+    "line": 7,
+    "keyword": "Feature",
+    "name": "Negative Menambah Master Tag (tambah.tag.012)",
+    "tags": [
+      {
+        "name": "@negtambah012",
+        "line": 6
+      }
+    ],
+    "uri": "features\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.012.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "negative-menambah-master-tag-(tambah.tag.013);negative-menambahkan-tag-baru-di-master-tag-mengisi-semua-data-dengan-benar-dan-saat-save-klik-buttonnya-2x",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Negative Menambahkan Tag Baru di Master Tag Mengisi semua data dengan benar dan saat save klik buttonnya 2x",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 878130699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "Login B2B berhasil",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Pergi ke menu Master",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Pergi ke menu Core",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Pergi ke menu Tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "Muncul list tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Klik Create New",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Mengisi semua data dengan benar dan saat save klik buttonnya 2x",
+            "match": {
+              "location": "steps\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.013.steps.js:142"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Klik Save, data tidak berhasil disimpan",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 15237299,
+              "error_message": "Error: Page did not produce any video frames\n    at Video.path (C:\\Users\\kurni\\playwright-cucumber\\node_modules\\playwright-core\\lib\\client\\video.js:38:26)\n    at async World.<anonymous> (C:\\Users\\kurni\\playwright-cucumber\\hooks.js:50:29)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negtambah013",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "negative-menambah-master-tag-(tambah.tag.013)",
+    "line": 7,
+    "keyword": "Feature",
+    "name": "Negative Menambah Master Tag (tambah.tag.013)",
+    "tags": [
+      {
+        "name": "@negtambah013",
+        "line": 6
+      }
+    ],
+    "uri": "features\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.013.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "negative-menambah-master-tag-(tambah.tag.014);negative-menambahkan-tag-baru-di-master-tag-mengisi-sebagian-data-dengan-benar-dan-ganti-url-ke-dashboard",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Negative Menambahkan Tag Baru di Master Tag Mengisi sebagian data dengan benar dan ganti url ke dashboard",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 888498100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "Login B2B berhasil",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Pergi ke menu Master",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Pergi ke menu Core",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Pergi ke menu Tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "Muncul list tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Klik Create New",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Mengisi sebagian data dengan benar dan ganti url ke dashboard",
+            "match": {
+              "location": "steps\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.014.steps.js:142"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Klik Save, data tidak berhasil disimpan",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 40475000,
+              "error_message": "Error: ENOENT: no such file or directory, lstat 'C:\\Users\\kurni\\playwright-cucumber\\reports\\videos\\c8b7901e5f050d076ec07af61278ed20.webm'"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negtambah014",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "negative-menambah-master-tag-(tambah.tag.014)",
+    "line": 7,
+    "keyword": "Feature",
+    "name": "Negative Menambah Master Tag (tambah.tag.014)",
+    "tags": [
+      {
+        "name": "@negtambah014",
+        "line": 6
+      }
+    ],
+    "uri": "features\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.014.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "negative-menambah-master-tag-(tambah.tag.015);negative-menambahkan-tag-baru-di-master-tag-mengisi-semua-data-dengan-benar-setelah-save-cek-halaman-urlnya-apa-sudah-di-tag-view",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Negative Menambahkan Tag Baru di Master Tag Mengisi semua data dengan benar setelah save cek halaman urlnya apa sudah di Tag View",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 923084999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "Login B2B berhasil",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Pergi ke menu Master",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Pergi ke menu Core",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Pergi ke menu Tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "Muncul list tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Klik Create New",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Mengisi semua data dengan benar setelah save cek halaman urlnya apa sudah di Tag View",
+            "match": {
+              "location": "steps\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.015.steps.js:143"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Klik Save, data tidak berhasil disimpan",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 17376599,
+              "error_message": "Error: ENOENT: no such file or directory, lstat 'C:\\Users\\kurni\\playwright-cucumber\\reports\\videos\\3023ecbdf24d7fe8d04bc3d2dbaa8dcc.webm'"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negtambah015",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "negative-menambah-master-tag-(tambah.tag.015)",
+    "line": 7,
+    "keyword": "Feature",
+    "name": "Negative Menambah Master Tag (tambah.tag.015)",
+    "tags": [
+      {
+        "name": "@negtambah015",
+        "line": 6
+      }
+    ],
+    "uri": "features\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.015.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "negative-menambah-master-tag-(tambah.tag.016);negative-menambahkan-tag-baru-di-master-tag-mengisi-semua-data-textfield-dengan-emoji",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Negative Menambahkan Tag Baru di Master Tag Mengisi semua data textfield dengan emoji",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 862137499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "Login B2B berhasil",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Pergi ke menu Master",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Pergi ke menu Core",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Pergi ke menu Tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "Muncul list tag",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Klik Create New",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Mengisi semua data textfield dengan emoji",
+            "match": {
+              "location": "steps\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.016.steps.js:143"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Klik Save, data tidak berhasil disimpan",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 15209399,
+              "error_message": "Error: Page did not produce any video frames\n    at Video.path (C:\\Users\\kurni\\playwright-cucumber\\node_modules\\playwright-core\\lib\\client\\video.js:38:26)\n    at async World.<anonymous> (C:\\Users\\kurni\\playwright-cucumber\\hooks.js:50:29)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negtambah016",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "negative-menambah-master-tag-(tambah.tag.016)",
+    "line": 7,
+    "keyword": "Feature",
+    "name": "Negative Menambah Master Tag (tambah.tag.016)",
+    "tags": [
+      {
+        "name": "@negtambah016",
+        "line": 6
+      }
+    ],
+    "uri": "features\\Negative\\B2B\\Master\\Core\\Tag\\tambah.tag.016.feature"
+  }
+]
