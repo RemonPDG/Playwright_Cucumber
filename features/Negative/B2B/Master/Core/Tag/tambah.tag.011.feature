@@ -7,11 +7,11 @@
 Feature: Negative Menambah Master Tag (tambah.tag.011)
 
   Scenario: Negative Menambahkan Tag Baru di Master Tag Mengisi Data mengisi Remarks dengan spasi saja
-    Given Login B2B berhasil
-    And Pergi ke menu Master
-    And Pergi ke menu Core
-    And Pergi ke menu Tag
-    When Muncul list tag
-    And Klik Create New
-    And Mengisi semua Data, Pada Remarks diisi dengan spasi saja
-    Then Klik Save, data tidak berhasil disimpan
+    Given Login B2B berhasil (011)
+    And Pergi ke menu Master (011)
+    And Pergi ke menu Core (011)
+    And Pergi ke menu Tag (011)
+    When Muncul list tag (011)
+    And Klik Create New (011)
+    And Mengisi semua Data, Pada Remarks diisi dengan spasi saja (011)
+    Then Klik Save, data tidak berhasil disimpan (011)

@@ -80,7 +80,7 @@ function writeDataToExcel(filePath, sheetName, data) {
 
 
 // Fungsi login
-Given('Login B2B berhasil', { timeout: 1555000 }, async function () {
+Given('Login B2B berhasil (003)', { timeout: 1555000 }, async function () {
   // browser = await chromium.launch({ 
   //   headless: false,
   // //   // executablePath: 'C:\\Program Files\\Firefox Nightly\\firefox.exe',
@@ -111,26 +111,26 @@ Given('Login B2B berhasil', { timeout: 1555000 }, async function () {
 });
 
 // Navigasi ke Master > Core > Tag
-Given('Pergi ke menu Master', async function () {
+Given('Pergi ke menu Master (003)', async function () {
   await this.page.getByLabel('Toggle Master').click();
 });
 
-Given('Pergi ke menu Core', async function () {
+Given('Pergi ke menu Core (003)', async function () {
   await this.page.getByLabel('Toggle Core').click();
 });
 
-Given('Pergi ke menu Tag', { timeout: 1555000 }, async function () {
+Given('Pergi ke menu Tag (003)', { timeout: 1555000 }, async function () {
   await this.page.getByLabel('Toggle Tag').click();
   await this.page.waitForSelector('div:nth-child(8)', { state: 'hidden' });
 });
 
 // Memastikan tampilan list tag
-When('Muncul list tag', async function () {
+When('Muncul list tag (003)', async function () {
   // await page.getByRole('button', { name: 'Create New' }).waitForSelector(selector, { state: 'visible', timeout: 5000 });
 });
 
 // Klik tombol Create New
-When('Klik Create New', { timeout: 1555000 }, async function () {
+When('Klik Create New (003)', { timeout: 1555000 }, async function () {
   // Tunggu hingga elemen yang diinginkan menghilang
   await this.page.waitForSelector('div:nth-child(8)', { state: 'hidden' });
   // Klik tombol "Create New"
@@ -138,7 +138,7 @@ When('Klik Create New', { timeout: 1555000 }, async function () {
 });
 
 // Isi data tag baru
-When('Mengisi semua data ,Pada Tag Name diisi 300 karakter', { timeout: 1555000 }, async function () {
+When('Mengisi semua data ,Pada Tag Name diisi 300 karakter (003)', { timeout: 1555000 }, async function () {
   await this.page.getByText('Pilih Tag Category').click();
   await this.page.getByText('PRODUCT', { exact: true }).click();
   await this.page.getByText('CAMPAIGN_GROUP', { exact: true }).click();
@@ -154,7 +154,7 @@ When('Mengisi semua data ,Pada Tag Name diisi 300 karakter', { timeout: 1555000 
 console.log(randomString);
 
 // Klik Save dan verifikasi hasil
-Then('Klik Save, data tidak berhasil disimpan', { timeout: 1555000 }, async function () {
+Then('Klik Save, data tidak berhasil disimpan (003)', { timeout: 1555000 }, async function () {
   try {
     await this.page.getByRole('button', { name: 'Save' }).click();
 

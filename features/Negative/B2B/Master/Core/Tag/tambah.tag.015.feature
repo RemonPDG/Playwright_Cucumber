@@ -7,11 +7,11 @@
 Feature: Negative Menambah Master Tag (tambah.tag.015)
 
   Scenario: Negative Menambahkan Tag Baru di Master Tag Mengisi semua data dengan benar setelah save cek halaman urlnya apa sudah di Tag View
-    Given Login B2B berhasil
-    And Pergi ke menu Master
-    And Pergi ke menu Core
-    And Pergi ke menu Tag
-    When Muncul list tag
-    And Klik Create New
-    And Mengisi semua data dengan benar setelah save cek halaman urlnya apa sudah di Tag View
-    Then Klik Save, data tidak berhasil disimpan
+    Given Login B2B berhasil (015)
+    And Pergi ke menu Master (015)
+    And Pergi ke menu Core (015)
+    And Pergi ke menu Tag (015)
+    When Muncul list tag (015)
+    And Klik Create New (015)
+    And Mengisi semua data dengan benar setelah save cek halaman urlnya apa sudah di Tag View (015)
+    Then Klik Save, data tidak berhasil disimpan (015)

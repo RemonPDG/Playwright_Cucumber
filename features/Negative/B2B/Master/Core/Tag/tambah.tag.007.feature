@@ -7,11 +7,11 @@
 Feature: Negative Menambah Master Tag (tambah.tag.007)
 
   Scenario: Negative Menambahkan Tag Baru di Master Tag Mengisi semua data ,Pada Tag Name diisi dengan data yang tersave sebelumnya
-    Given Login B2B berhasil
-    And Pergi ke menu Master
-    And Pergi ke menu Core
-    And Pergi ke menu Tag
-    When Muncul list tag
-    And Klik Create New
-    And Mengisi semua data ,Pada Tag Name diisi dengan data yang tersave sebelumnya
-    Then Klik Save, data tidak berhasil disimpan
+    Given Login B2B berhasil (007)
+    And Pergi ke menu Master (007)
+    And Pergi ke menu Core (007)
+    And Pergi ke menu Tag (007)
+    When Muncul list tag (007)
+    And Klik Create New (007)
+    And Mengisi semua data ,Pada Tag Name diisi dengan data yang tersave sebelumnya (007)
+    Then Klik Save, data tidak berhasil disimpan (007)
