@@ -7,11 +7,11 @@
 Feature: Negative Menambah Master Tag (tambah.tag.009)
 
   Scenario: Negative Menambahkan Tag Baru di Master Tag Mengisi semua data ,Pada Tag Color diisi dengan warna yang tidak valid
-    Given Login B2B berhasil (009)
-    And Pergi ke menu Master (009)
-    And Pergi ke menu Core (009)
-    And Pergi ke menu Tag (009)
-    When Muncul list tag (009)
-    And Klik Create New (009)
-    And Mengisi semua data ,Pada Tag Color diisi dengan warna yang tidak valid (009)
-    Then Klik Save, data tidak berhasil disimpan (009)
+    Given Login B2B berhasil - 009
+    And Pergi ke menu Master - 009
+    And Pergi ke menu Core - 009
+    And Pergi ke menu Tag - 009
+    When Muncul list tag - 009
+    And Klik Create New - 009
+    And Mengisi semua data ,Pada Tag Color diisi dengan warna yang tidak valid - 009
+    Then Klik Save, data tidak berhasil disimpan - 009

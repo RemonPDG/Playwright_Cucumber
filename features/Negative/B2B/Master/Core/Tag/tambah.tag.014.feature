@@ -7,11 +7,11 @@
 Feature: Negative Menambah Master Tag (tambah.tag.014)
 
   Scenario: Negative Menambahkan Tag Baru di Master Tag Mengisi sebagian data dengan benar dan ganti url ke dashboard
-    Given Login B2B berhasil (014)
-    And Pergi ke menu Master (014)
-    And Pergi ke menu Core (014)
-    And Pergi ke menu Tag (014)
-    When Muncul list tag (014)
-    And Klik Create New (014)
-    And Mengisi sebagian data dengan benar dan ganti url ke dashboard (014)
-    Then Klik Save, data tidak berhasil disimpan (014)
+    Given Login B2B berhasil - 014
+    And Pergi ke menu Master - 014
+    And Pergi ke menu Core - 014
+    And Pergi ke menu Tag - 014
+    When Muncul list tag - 014
+    And Klik Create New - 014
+    And Mengisi sebagian data dengan benar dan ganti url ke dashboard - 014
+    Then Klik Save, data tidak berhasil disimpan - 014

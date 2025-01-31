@@ -76,7 +76,7 @@ module.exports = {
     paths: [
       './features/Negative/**/Tag/*.feature',
     ],
-    parallel: 1, // Menjalankan dalam 1 thread
+    parallel: 2, // Menjalankan dalam 1 thread
   },
   negative_tag_001: {
     require: ['./steps/Negative/**/Tag/tambah.tag.001.steps.js', 'hooks.js'], // Sama dengan default

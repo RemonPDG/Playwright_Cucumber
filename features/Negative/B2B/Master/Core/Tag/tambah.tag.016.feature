@@ -7,11 +7,11 @@
 Feature: Negative Menambah Master Tag (tambah.tag.016)
 
   Scenario: Negative Menambahkan Tag Baru di Master Tag Mengisi semua data textfield dengan emoji
-    Given Login B2B berhasil (016)
-    And Pergi ke menu Master (016)
-    And Pergi ke menu Core (016)
-    And Pergi ke menu Tag (016)
-    When Muncul list tag (016)
-    And Klik Create New (016)
-    And Mengisi semua data textfield dengan emoji (016)
-    Then Klik Save, data tidak berhasil disimpan (016)
+    Given Login B2B berhasil - 016
+    And Pergi ke menu Master - 016
+    And Pergi ke menu Core - 016
+    And Pergi ke menu Tag - 016
+    When Muncul list tag - 016
+    And Klik Create New - 016
+    And Mengisi semua data textfield dengan emoji - 016
+    Then Klik Save, data tidak berhasil disimpan - 016

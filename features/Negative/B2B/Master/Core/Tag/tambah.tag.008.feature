@@ -7,11 +7,11 @@
 Feature: Negative Menambah Master Tag (tambah.tag.008)
 
   Scenario: Negative Menambahkan Tag Baru di Master Tag Mengisi semua data ,Pada Tag Color di iisi kosong
-    Given Login B2B berhasil (008)
-    And Pergi ke menu Master (008)
-    And Pergi ke menu Core (008)
-    And Pergi ke menu Tag (008)
-    When Muncul list tag (008)
-    And Klik Create New (008)
-    And Mengisi semua data ,Pada Tag Color di iisi kosong (008)
-    Then Klik Save, data tidak berhasil disimpan (008)
+    Given Login B2B berhasil - 008
+    And Pergi ke menu Master - 008
+    And Pergi ke menu Core - 008
+    And Pergi ke menu Tag - 008
+    When Muncul list tag - 008
+    And Klik Create New - 008
+    And Mengisi semua data ,Pada Tag Color di iisi kosong - 008
+    Then Klik Save, data tidak berhasil disimpan - 008

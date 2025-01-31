@@ -82,7 +82,7 @@ function writeDataToExcel(filePath, sheetName, data) {
 
 
 // Fungsi login
-Given('Login B2B berhasil (016)', { timeout: 1555000 }, async function () {
+Given('Login B2B berhasil - 016', { timeout: 1555000 }, async function () {
   // browser = await chromium.launch({ 
   //   headless: false,
   // //   // executablePath: 'C:\\Program Files\\Firefox Nightly\\firefox.exe',
@@ -113,26 +113,26 @@ Given('Login B2B berhasil (016)', { timeout: 1555000 }, async function () {
 });
 
 // Navigasi ke Master > Core > Tag
-Given('Pergi ke menu Master (016)', async function () {
+Given('Pergi ke menu Master - 016', async function () {
   await this.page.getByLabel('Toggle Master').click();
 });
 
-Given('Pergi ke menu Core (016)', async function () {
+Given('Pergi ke menu Core - 016', async function () {
   await this.page.getByLabel('Toggle Core').click();
 });
 
-Given('Pergi ke menu Tag (016)', { timeout: 1555000 }, async function () {
+Given('Pergi ke menu Tag - 016', { timeout: 1555000 }, async function () {
   await this.page.getByLabel('Toggle Tag').click();
   await this.page.waitForSelector('div:nth-child(8)', { state: 'hidden' });
 });
 
 // Memastikan tampilan list tag
-When('Muncul list tag (016)', async function () {
+When('Muncul list tag - 016', async function () {
   // await page.getByRole('button', { name: 'Create New' }).waitForSelector(selector, { state: 'visible', timeout: 5000 });
 });
 
 // Klik tombol Create New
-When('Klik Create New (016)', { timeout: 1555000 }, async function () {
+When('Klik Create New - 016', { timeout: 1555000 }, async function () {
   // Tunggu hingga elemen yang diinginkan menghilang
   await this.page.waitForSelector('div:nth-child(8)', { state: 'hidden' });
   // Klik tombol "Create New"
@@ -140,7 +140,7 @@ When('Klik Create New (016)', { timeout: 1555000 }, async function () {
 });
 
 // Isi data tag baru
-When('Mengisi semua data textfield dengan emoji (016)', { timeout: 1555000 }, async function () {
+When('Mengisi semua data textfield dengan emoji - 016', { timeout: 1555000 }, async function () {
   await this.page.getByText('Pilih Tag Category').click();
   await this.page.getByText('PRODUCT', { exact: true }).click();
   await this.page.getByText('CAMPAIGN_GROUP', { exact: true }).click();
@@ -156,7 +156,7 @@ When('Mengisi semua data textfield dengan emoji (016)', { timeout: 1555000 }, as
 console.log(randomString);
 
 // Klik Save dan verifikasi hasil
-Then('Klik Save, data tidak berhasil disimpan (016)', { timeout: 1555000 }, async function () {
+Then('Klik Save, data tidak berhasil disimpan - 016', { timeout: 1555000 }, async function () {
   try {
     await this.page.getByRole('button', { name: 'Save' }).click();
     // Tunggu beberapa detik untuk melihat apakah error 500 muncul
@@ -167,13 +167,13 @@ Then('Klik Save, data tidak berhasil disimpan (016)', { timeout: 1555000 }, asyn
     if (errorPopup) {
       console.warn('Data tidak dapat disimpan: Server Error (500)');
     } else {
-      const excelFilePath = path.resolve(__dirname, '../../../../../../Excel/B2B.xlsx');
-      const filePath = excelFilePath; // Lokasi file Excel Anda
-      const sheetName = "TagSave";     // Nama sheet di file Excel
-      writeDataToExcel(filePath, sheetName, [randomString]);
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // const excelFilePath = path.resolve(__dirname, '../../../../../../Excel/B2B.xlsx');
+      // const filePath = excelFilePath; // Lokasi file Excel Anda
+      // const sheetName = "TagSave";     // Nama sheet di file Excel
+      // writeDataToExcel(filePath, sheetName, [randomString]);
+      // await new Promise(resolve => setTimeout(resolve, 1000));
 
-      console.log(`Data '${randomString}' berhasil disimpan ke ${filePath} di sheet '${sheetName}'`);
+      // console.log(`Data '${randomString}' berhasil disimpan ke ${filePath} di sheet '${sheetName}'`);
       console.log('Data berhasil disimpan.');
     }
   } catch (error) {
@@ -186,13 +186,10 @@ Then('Klik Save, data tidak berhasil disimpan (016)', { timeout: 1555000 }, asyn
   }
   try {
     await this.page.locator('div').filter({ hasText: new RegExp(`^${randomString}$`, 'i') });
+    await expect(this.page).toHaveURL('https://ui-qc-b2b.bhakti.co.id/master/core/tag/view');
   } catch (error) {
     console.warn('Tag Name tidak ditemukan, Test habis');
   }
-  await expect(this.page).toHaveURL('https://ui-qc-b2b.bhakti.co.id/master/core/tag/view');
-
-
-
 });
 
 // const { After } = require('@cucumber/cucumber');

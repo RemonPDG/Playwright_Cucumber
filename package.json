@@ -14,7 +14,7 @@
 
 
     
-    "master_tag": "npx cucumber-js --profile master_tag_v2 --tags \"@tambah\" --format json:reports/json/tambah_report.json && npx cucumber-js --profile master_tag_v2 --tags \"@edit\" --format json:reports/json/edit_report.json && npx cucumber-js --profile master_tag_v2 --tags \"@hapus\" --format json:reports/json/hapus_report.json && node report-generator.js",
+    "master_tag": "npx cucumber-js --profile master_tag_v2 --tags \"@tambah\" --format json:reports/json/tambah_report.json && npx cucumber-js --profile master_tag_v2 --tags \"@edit\" --format json:reports/json/edit_report.json && npx cucumber-js --profile master_tag_v2 --tags \"@hapus\" --format json:reports/json/hapus_report.json && npx cucumber-js --profile master_tag_v2 --tags \"@tambah2\" --format json:reports/json/tambah_2_report.json && node report-generator.js",
     "master_city": "npx cucumber-js --profile master_city --tags \"@tambah\" --format json:reports/json/city_tambah_report.json",
     "negative_tag_all": "npx cucumber-js --profile negative_tag_all --format json:reports/json/negative_tag_all.json",
     "generate-report": "node report-generator.js",
