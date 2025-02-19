@@ -78,6 +78,17 @@ module.exports = {
     ],
     parallel: 2, // Menjalankan dalam 1 thread
   },
+  negative_login_all: {
+    require: [
+      './steps/Positive/**/Login/*.steps.js',
+      'hooks.js'
+    ], // Sama dengan default
+    // format: ['json:reports/json/cucumber_report.json'],
+    paths: [
+      './features/Positive/**/Login/*.feature',
+    ],
+    parallel: 2, // Menjalankan dalam 1 thread
+  },
   negative_tag_001: {
     require: ['./steps/Negative/**/Tag/tambah.tag.001.steps.js', 'hooks.js'], // Sama dengan default
     format: ['json:reports/json/neg_tambah_tag_001.json'],
@@ -172,6 +183,78 @@ module.exports = {
     require: ['./steps/Negative/**/Tag/tambah.tag.016.steps.js', 'hooks.js'], // Sama dengan default
     format: ['json:reports/json/neg_tambah_tag_016.json'],
     paths: ['./features/Negative/**/Tag/tambah.tag.016.feature'],
+    parallel: 1, // Menjalankan dalam 1 thread
+  },
+  positive_login_001: {
+    require: ['./steps/Positive/**/Login/login.b2b.001.steps.js', 'hooks.js'], // Sama dengan default
+    // format: ['json:reports/json/pos_login_b2b_001.json'],
+    paths: ['./features/Positive/**/Login/login.b2b.001.feature'],
+    parallel: 1, // Menjalankan dalam 1 thread
+  },
+  negative_login_all: {
+    require: ['./steps/Negative/**/Login/*.steps.js', 'hooks.js'], // Sama dengan default
+    // format: ['json:reports/json/neg_login_b2b_001.json'],
+    paths: ['./features/Negative/**/Login/*.feature'],
+    parallel: 1, // Menjalankan dalam 1 thread
+  },
+  negative_login_002: {
+    require: ['./steps/Negative/**/Login/login.b2b.002.steps.js', 'hooks.js'], // Sama dengan default
+    format: ['json:reports/json/neg_login_b2b_002.json'],
+    paths: ['./features/Negative/**/Login/login.b2b.002.feature'],
+    parallel: 1, // Menjalankan dalam 1 thread
+  },
+  negative_login_003: {
+    require: ['./steps/Negative/**/Login/login.b2b.003.steps.js', 'hooks.js'], // Sama dengan default
+    format: ['json:reports/json/neg_login_b2b_003.json'],
+    paths: ['./features/Negative/**/Login/login.b2b.003.feature'],
+    parallel: 1, // Menjalankan dalam 1 thread
+  },
+  negative_login_004: {
+    require: ['./steps/Negative/**/Login/login.b2b.004.steps.js', 'hooks.js'], // Sama dengan default
+    format: ['json:reports/json/neg_login_b2b_004.json'],
+    paths: ['./features/Negative/**/Login/login.b2b.004.feature'],
+    parallel: 1, // Menjalankan dalam 1 thread
+  },
+  negative_login_005: {
+    require: ['./steps/Negative/**/Login/login.b2b.005.steps.js', 'hooks.js'], // Sama dengan default
+    format: ['json:reports/json/neg_login_b2b_005.json'],
+    paths: ['./features/Negative/**/Login/login.b2b.005.feature'],
+    parallel: 1, // Menjalankan dalam 1 thread
+  },
+  negative_login_006: {
+    require: ['./steps/Negative/**/Login/login.b2b.006.steps.js', 'hooks.js'], // Sama dengan default
+    format: ['json:reports/json/neg_login_b2b_006.json'],
+    paths: ['./features/Negative/**/Login/login.b2b.006.feature'],
+    parallel: 1, // Menjalankan dalam 1 thread
+  },
+  negative_login_007: {
+    require: ['./steps/Negative/**/Login/login.b2b.007.steps.js', 'hooks.js'], // Sama dengan default
+    format: ['json:reports/json/neg_login_b2b_007.json'],
+    paths: ['./features/Negative/**/Login/login.b2b.007.feature'],
+    parallel: 1, // Menjalankan dalam 1 thread
+  },
+  negative_login_008: {
+    require: ['./steps/Negative/**/Login/login.b2b.008.steps.js', 'hooks.js'], // Sama dengan default
+    format: ['json:reports/json/neg_login_b2b_008.json'],
+    paths: ['./features/Negative/**/Login/login.b2b.008.feature'],
+    parallel: 1, // Menjalankan dalam 1 thread
+  },
+  negative_login_009: {
+    require: ['./steps/Negative/**/Login/login.b2b.009.steps.js', 'hooks.js'], // Sama dengan default
+    format: ['json:reports/json/neg_login_b2b_009.json'],
+    paths: ['./features/Negative/**/Login/login.b2b.009.feature'],
+    parallel: 1, // Menjalankan dalam 1 thread
+  },
+  negative_login_010: {
+    require: ['./steps/Negative/**/Login/login.b2b.010.steps.js', 'hooks.js'], // Sama dengan default
+    format: ['json:reports/json/neg_login_b2b_010.json'],
+    paths: ['./features/Negative/**/Login/login.b2b.010.feature'],
+    parallel: 1, // Menjalankan dalam 1 thread
+  },
+  negative_login_011: {
+    require: ['./steps/Negative/**/Login/login.b2b.011.steps.js', 'hooks.js'], // Sama dengan default
+    format: ['json:reports/json/neg_login_b2b_011.json'],
+    paths: ['./features/Negative/**/Login/login.b2b.011.feature'],
     parallel: 1, // Menjalankan dalam 1 thread
   },
 };

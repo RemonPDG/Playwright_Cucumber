@@ -17,9 +17,12 @@
     "master_tag": "npx cucumber-js --profile master_tag_v2 --tags \"@tambah\" --format json:reports/json/tambah_report.json && npx cucumber-js --profile master_tag_v2 --tags \"@edit\" --format json:reports/json/edit_report.json && npx cucumber-js --profile master_tag_v2 --tags \"@hapus\" --format json:reports/json/hapus_report.json && npx cucumber-js --profile master_tag_v2 --tags \"@tambah2\" --format json:reports/json/tambah_2_report.json && node report-generator.js",
     "master_city": "npx cucumber-js --profile master_city --tags \"@tambah\" --format json:reports/json/city_tambah_report.json",
     "negative_tag_all": "npx cucumber-js --profile negative_tag_all --format json:reports/json/negative_tag_all.json",
+    "b2b_login": "npx cucumber-js --profile positive_login_001 --tags \"@posilogin001\" --format json:reports/json/pos_login_001.json",
+    "negative_b2b_login": "npx cucumber-js --profile negative_login_all --format json:reports/json/negative_login_all.json",
     "generate-report": "node report-generator.js",
-    "run-all": "concurrently \"npm run master_tag\" \"npm run master_city\"",
-    "run-all-v2": "concurrently \"npm run master_tag\" \"npm run negative_tag_all\""
+    "run-all": "concurrently \"npm run master_tag\" \"npm run master_city\" \"npm run b2b_login\" \"npm run negative_b2b_login\"" ,
+    "run-all-mastertag": "concurrently \"npm run master_tag\" \"npm run negative_tag_all\"",
+    "run-all-login": "concurrently \"npm run b2b_login\" \"npm run negative_b2b_login\""
     
   },
   "keywords": [],
